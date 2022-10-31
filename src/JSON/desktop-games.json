@@ -1,0 +1,48 @@
+{
+  "top_games": [
+    {
+      "name": "Roulette Codere",
+      "alt": "Juega Roulette Codere en casino online",
+      "logo_alt": "Logo juego Roulette Codere",
+      "sponsor": "Evolution",
+      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/topGameLeft.jpg",
+      "logo": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/topGameLeftLogo.png",
+      "gamelink": "https://m.caba.codere.bet.ar/deportes/#/CasinoPage?playgame=EVG%20First%20Person%20Roulette"
+    },
+    {
+      "name": "Football Champions Cup",
+      "alt": "Juega Football Champions Cup",
+      "logo_alt": "Logo Football Champions Cup",
+      "sponsor": "Netent",
+      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/topGameRight.jpg",
+      "logo": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/topGameRightLogo.png",
+      "gamelink": "https://m.caba.codere.bet.ar/deportes/#/CasinoPage?playgame=EVG%20Football%20Champions%20Cup"
+    }
+  ],
+  "bottom_games": [
+    {
+      "name": "Jumanji",
+      "alt": "Juega aquí Jumanji en casino online",
+      "logo_alt": "Logo Jumanji",
+      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/newGameLeft.jpg",
+      "logo": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/newGameLeftLogo.png",
+      "gamelink": "https://m.caba.codere.bet.ar/deportes/#/CasinoPage?playgame=EVG%20Jumanji"
+    },
+    {
+      "name": "Lightning Roulette",
+      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/newGameMiddle.jpg",
+      "logo": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/newGameMiddleLogo.png",
+      "alt": "Juega Lightning Roulette en casino online",
+      "logo_alt": "Logo Lightning Roulette",
+      "gamelink": "https://m.codere.pa/deportespanama/#/CasinoPage?playgame=PRP%20Parrots%20Gold"
+    },
+    {
+      "name": "Divine Fortune Megaways",
+      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/newGameRight.jpg",
+      "logo": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/newGameRightLogo.png",
+      "alt": "Juega Divine Fortune Megaways en casino online",
+      "logo_alt": "Divine Fortune Megaways",
+      "gamelink": "https://m.caba.codere.bet.ar/deportes/#/CasinoPage?playgame=EVG%20Divine%20Fortune%20Megaways"
+    }
+  ]
+}
