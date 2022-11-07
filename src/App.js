@@ -61,9 +61,13 @@ function App() {
         <div id="first-section">
           <Header regis={regis} />
           {memoSwiper}
-          {showTimer ? <Timer /> : <></>}
+          {showTimer && new Date() <= new Date("Nov 21 2022 13:00") ? (
+            <Timer />
+          ) : (
+            <></>
+          )}
         </div>
-        <SportGames />
+        {/* <SportGames /> */}
         <Games />
       </isMobileContext.Provider>
       <Content />

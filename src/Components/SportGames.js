@@ -34,7 +34,7 @@ function SportGames() {
   useEffect(() => {
     axios.get(URL, { headers }).then((res) => {
       // get only the first 6 games.
-      console.log(res.data);
+      // console.log(res.data);
       // setData(res.data.slice(0, 6));
       // console.log(res.);
       setData(
@@ -122,7 +122,7 @@ function SportGames() {
                               <Card.Link
                                 className={sportCSS.url}
                                 href={
-                                  "https://m.apuestas.codere.es/deportes/#/HomePage?addbet=" +
+                                  "https://m.caba.codere.bet.ar/deportes/#/HomePage?addbet=" +
                                   item.Games[0].Results[0].NodeId
                                 }
                               >
@@ -154,7 +154,7 @@ function SportGames() {
                               <Card.Link
                                 className={sportCSS.url}
                                 href={
-                                  "https://m.apuestas.codere.es/deportes/#/HomePage?addbet=" +
+                                  "https://m.caba.codere.bet.ar/deportes/#/HomePage?addbet=" +
                                   item.Games[0].Results[1].NodeId
                                 }
                               >
@@ -193,7 +193,7 @@ function SportGames() {
                                 <Card.Link
                                   className={sportCSS.url}
                                   href={
-                                    "https://m.apuestas.codere.es/deportes/#/HomePage?addbet=" +
+                                    "https://m.caba.codere.bet.ar/deportes/#/HomePage?addbet=" +
                                     item.Games[0].Results[2].NodeId
                                   }
                                 >

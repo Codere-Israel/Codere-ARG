@@ -40,9 +40,10 @@ function Header(props) {
     "https://m.caba.codere.bet.ar/deportes/#/HomePage?openlogin=true";
 
   // const URL = "https://dm.apuestas.codere.es/LoginServicesESApi/login/web";
+
   const LOGO =
-    new Date() <= new Date("11/02/2022")
-      ? "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/halloweenLogo.png"
+    new Date() <= new Date("Dec 19 2022 09:00")
+      ? "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/copaLogo.png"
       : "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/Splash/riverPlateTopLogo.svg";
 
   // Hooks
