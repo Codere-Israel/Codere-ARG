@@ -1,6 +1,17 @@
-@font-face {
+/* For STG env */
+/* @font-face {
   font-family: Codere;
   src: url(../fonts/HighSchool-V3.1.ttf);
+} */
+
+/* For PRD */
+@font-face {
+  font-family: Codere;
+  src: url(https://www.codere.bet.ar/Fonts/HighSchool-V3.1.ttf);
+}
+@font-face {
+  font-family: Codere-Roboto;
+  src: url(https://www.codere.bet.ar/Fonts/roboto-all-400-normal.woff);
 }
 
 .banner_info:hover,
@@ -67,7 +78,8 @@
   height: 3.2vw;
   line-height: 3.2vw;
   text-align: center;
-  font-family: "Roboto Condensed";
+  font-family: Codere-Roboto;
+  /* font-family: "Roboto Condensed"; */
 }
 
 .semicol {

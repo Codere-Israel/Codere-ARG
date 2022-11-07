@@ -271,8 +271,8 @@ function Content(props) {
                 computadora o dispositivo móvil.
               </p>
               <p>
-                En nuestro
-                <a href="https://www.codere.bet.ar/casino"> casino online </a>
+                En nuestro{" "}
+                <a href="https://www.codere.bet.ar/casino">casino online</a>{" "}
                 encontrarás todas las mesas y máquinas que te puedas imaginar:
                 <a href="https://www.codere.bet.ar/casino/blackjack">
                   {" "}

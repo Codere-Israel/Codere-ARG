@@ -4,7 +4,7 @@ import { useCountdown } from "../Hooks/useCountdown";
 import { Zoom, Slide, Fade } from "react-awesome-reveal";
 
 const Timer = () => {
-  const dateToCount = "11/20/2022 10:00";
+  const dateToCount = "11/20/2022 13:00";
   const [days, hours, minutes, seconds] = useCountdown(dateToCount);
   const ShowCounter = ({ days, hours, minutes, seconds }) => {
     return (
@@ -42,7 +42,7 @@ const Timer = () => {
       rel="nofollow"
       className={counterCSS.banner_info}
     >
-      <Fade cascade triggerOnce={true} duration={800}>
+      <Fade triggerOnce={true} duration={750}>
         <div className={counterCSS.banner_title}>la</div>
         <div className={counterCSS.banner_title}>Copa Del Mundo</div>
         <div className={counterCSS.banner_title}>Comienza En</div>

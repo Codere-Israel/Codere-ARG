@@ -1,18 +1,18 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/world-cup-desktop.jpg",
+      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/world-cup-banner-desktop.jpg",
       "img_alt": "world-cup",
       "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
       "startDate": "",
       "endDate": ""
     },
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/world-cup-desktop.jpg",
+      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/world-cup-desktop.jpg",
       "img_alt": "world-cup",
       "tycLink": "",
       "startDate": "",
-      "endDate": ""
+      "endDate": "Nov 21 2022 13:00"
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/banner8.jpg",
@@ -46,18 +46,18 @@
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/world-cup-mobile.jpg",
+      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/world-cup-banner-mobile.jpg",
       "img_alt": "world-cup",
       "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
       "startDate": "",
       "endDate": ""
     },
     {
-      "image": "https://www.codere.pa/_catalogs/masterpage/codere/images/splash/world-cup-mobile.jpg",
+      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/world-cup-mobile.jpg",
       "img_alt": "world-cup",
       "tycLink": "",
       "startDate": "",
-      "endDate": ""
+      "endDate": "Nov 21 2022 13:00"
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/bannerMobile8.jpg",

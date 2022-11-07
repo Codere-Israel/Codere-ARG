@@ -49,7 +49,7 @@ function MySwiper(props) {
               pagination={{ clickable: true }}
               effect={"fade"}
               lazy={{ loadPrevNext: true, loadPrevNextAmount: 1 }}
-              autoplay={{ delay: 3250 }}
+              autoplay={{ delay: 3250, disableOnInteraction: false }}
               spaceBetween={0}
               slidesPerView={1}
               loop={true}
@@ -94,7 +94,14 @@ function MySwiper(props) {
                             {regisButtonText}
                             <FontAwesomeIcon icon={faAngleRight} />
                           </Button>
-                          <p style={{ color: "#fff" }}>
+                          <p
+                            style={{
+                              color: "#fff",
+                              marginBottom: "0",
+                              fontSize: ".85rem",
+                              marginTop: ".25rem",
+                            }}
+                          >
                             Disponible únicamente dentro de CABA
                           </p>
                           {item.tycLink ? (
