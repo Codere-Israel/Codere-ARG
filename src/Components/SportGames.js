@@ -24,7 +24,7 @@ const headers = {
   CodereAffiliateApiSecret: "cb82be80-d58a-4c7a-a523-a4a9dd98f237",
 };
 
-const spinnerCss = { margin: "auto", marginTop: "4rem" };
+const spinnerCss = { margin: "auto", marginTop: "4rem", marginBottom: "2rem" };
 
 function SportGames() {
   const [data, setData] = useState([]);
@@ -38,7 +38,9 @@ function SportGames() {
       // setData(res.data.slice(0, 6));
       // console.log(res.);
       setData(
-        res.data.sort((a, b) => new Date(a.StartDate) - new Date(b.StartDate))
+        res.data
+          .sort((a, b) => new Date(a.StartDate) - new Date(b.StartDate))
+          .slice(0, 6)
       );
       setShowSpinner(false);
       // setData(res.data);
@@ -69,12 +71,7 @@ function SportGames() {
   return (
     <>
       {showSpinner ? (
-        <>
-          <BarLoader color="#79c000" cssOverride={spinnerCss} />
-          <p style={{ textAlign: "center", color: "#fff" }}>
-            Copa del Mundo is Loading
-          </p>
-        </>
+        <BarLoader color="#79c000" cssOverride={spinnerCss} />
       ) : (
         <div className={sportCSS.sport_games_slider}>
           {/* {console.log(data)} */}
@@ -82,11 +79,13 @@ function SportGames() {
             {(isMobile) => {
               return (
                 <>
-                  <h1>Copa del Mundo</h1>
+                  <h2 style={{ color: "#79c000", fontWeight: "700" }}>
+                    Copa Mundial 2022
+                  </h2>
                   <Swiper
                     modules={[Autoplay, Lazy, Navigation]}
                     lazy={{ loadPrevNext: true, loadPrevNextAmount: 1 }}
-                    autoplay={{ delay: 9400 }}
+                    autoplay={{ delay: 2000 }}
                     spaceBetween={25}
                     slidesPerView={isMobile ? 1 : 3}
                     loop={true}
@@ -114,7 +113,7 @@ function SportGames() {
                                   marginBottom: ".25rem",
                                 }}
                                 src={
-                                  "https://www.codere.es/copaflags/" +
+                                  "https://www.codere.bet.ar/copaflags1/" +
                                   item.Games[0].Results[0].Name +
                                   ".png"
                                 }
@@ -184,7 +183,7 @@ function SportGames() {
                                   marginBottom: ".25rem",
                                 }}
                                 src={
-                                  "https://www.codere.es/copaflags/" +
+                                  "https://www.codere.bet.ar/copaflags1/" +
                                   item.Games[0].Results[2].Name +
                                   ".png"
                                 }
@@ -224,10 +223,10 @@ function SportGames() {
 
           <div className={sportCSS.arrows}>
             <div className={sportCSS.prev + " prev"}>
-              <FontAwesomeIcon icon={faCircleChevronLeft} />
+              <FontAwesomeIcon icon={faChevronLeft} />
             </div>
             <div className={sportCSS.next + " next"}>
-              <FontAwesomeIcon icon={faCircleChevronRight} />
+              <FontAwesomeIcon icon={faChevronRight} />
             </div>
           </div>
         </div>

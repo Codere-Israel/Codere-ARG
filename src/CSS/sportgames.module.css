@@ -82,60 +82,28 @@
 
 .prev,
 .next {
-  /* top: -6vw; */
   font-size: 3rem;
   color: #fff;
   position: relative;
   cursor: pointer;
   opacity: 0.6;
   z-index: 1;
-  animation-duration: 750ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-timing-function: ease-in-out;
 }
 
 .prev {
-  animation-name: sts-left;
+  right: 2vw;
 }
 
 .next {
-  animation-name: sts-right;
-}
-
-@keyframes sts-left {
-  0% {
-    transform: translateX(0.6rem);
-  }
-
-  50% {
-    transform: translateX(-0.3rem);
-  }
-
-  100% {
-    transform: translateX(0.6rem);
-  }
-}
-@keyframes sts-right {
-  0% {
-    transform: translateX(-0.3rem);
-  }
-
-  50% {
-    transform: translateX(0.6rem);
-  }
-
-  100% {
-    transform: translateX(-0.3rem);
-  }
+  left: 2vw;
 }
 
 @media screen and (max-width: 768px) {
   .sport_games_slider {
     width: 95%;
     font-size: 0.85rem;
-    margin-top: -15vw;
-    margin-bottom: 1rem;
+    margin-top: -14vw;
+    margin-bottom: 0;
   }
 
   .sport_games_slider h1 {
@@ -153,7 +121,6 @@
   }
 
   .frame {
-    /* width: 100% !important; */
     border-radius: 0.6rem;
   }
 
@@ -166,9 +133,9 @@
     font-size: 2rem;
   }
   .prev {
-    /* margin-left: -10px; */
+    margin-left: 5px;
   }
   .next {
-    /* margin-right: -10px; */
+    margin-right: 5px;
   }
 }

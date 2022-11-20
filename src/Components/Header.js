@@ -42,9 +42,7 @@ function Header(props) {
   // const URL = "https://dm.apuestas.codere.es/LoginServicesESApi/login/web";
 
   const LOGO =
-    new Date() <= new Date("Dec 19 2022 09:00")
-      ? "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/copaLogo.png"
-      : "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/Splash/riverPlateTopLogo.svg";
+    "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/Splash/riverPlateTopLogo.svg";
 
   // Hooks
   const [show, setShow] = useState(false);
@@ -265,7 +263,7 @@ function Header(props) {
                     PROMOCIONES
                   </Nav.Link>
                   <Nav.Link href="https://bingos.codere.bet.ar/" rel="nofollow">
-                    NUESTRAS SASLAS
+                    NUESTRAS SALAS
                   </Nav.Link>
                 </Nav>
                 <Dropdown>

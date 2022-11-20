@@ -13,30 +13,13 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 0;
 }
 
-::-webkit-scrollbar-button:vertical:start {
+::-webkit-scrollbar-button {
   /* border-radius: 5px; */
-  background-color: #79c300;
-  height: 4.2rem;
-  width: 15px;
-}
 
-/* ::-webkit-scrollbar-corner {
-  background-color: red;
-} */
-
-::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-  background-image: linear-gradient(
-    0deg,
-    rgba(101, 192, 0, 1) 20%,
-    rgba(117, 189, 1, 1) 20%
-  );
-  opacity: 0.2;
-  height: 190px;
-  /* border-radius: 20px; */
+  width: 0;
 }
 
 /* stroke */
@@ -404,8 +387,8 @@ body {
 
 #carousel-section {
   position: relative;
-  top: 4rem;
-  margin-bottom: 4rem;
+  top: 4.5vw;
+  margin-bottom: 4.5vw;
 }
 
 /* Swiper */
@@ -1039,7 +1022,7 @@ footer.nb-footer .footer-info-single p {
   width: 40%;
   font-size: 0.7vw;
   line-height: 1.25rem;
-  text-align: left;
+  text-align: center;
   color: #a1a4a6;
 }
 
@@ -1329,7 +1312,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   #carousel-section {
     top: 14vw;
-    margin-bottom: 9vw;
+    margin-bottom: 14vw;
   }
 
   .swiper-horizontal > .swiper-pagination-bullets,

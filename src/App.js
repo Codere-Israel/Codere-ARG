@@ -49,6 +49,7 @@ function App() {
       <MySwiper
         regis={regis}
         setShowTimer={setShowTimer}
+        isMobile={isMobile}
         // setRegisButtonText={setRegisButtonText}
         // regisButtonText={regisButtonText}
       />
@@ -61,13 +62,13 @@ function App() {
         <div id="first-section">
           <Header regis={regis} />
           {memoSwiper}
-          {showTimer && new Date() <= new Date("Nov 21 2022 13:00") ? (
+          {showTimer && new Date() <= new Date("2022-11-20T16:00:00Z") ? (
             <Timer />
           ) : (
             <></>
           )}
         </div>
-        {/* <SportGames /> */}
+        <SportGames />
         <Games />
       </isMobileContext.Provider>
       <Content />

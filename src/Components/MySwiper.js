@@ -17,11 +17,10 @@ import { useState } from "react";
 var imgs = [];
 
 function MySwiper(props) {
-  const [regisButtonText, setRegisButtonText] = useState("Regístrate");
+  const [regisButtonText, setRegisButtonText] = useState("Registrate");
   const [regis, setRegis] = useState(props.regis);
 
   const indexHandler = (swiper) => {
-    // console.log(swiper);
     if (swiper.realIndex === 1) props.setShowTimer(true);
     else props.setShowTimer(false);
     if (swiper.realIndex === imgs.length - 1) {
@@ -30,7 +29,7 @@ function MySwiper(props) {
         setRegis("https://bingos.codere.bet.ar/");
       }
     } else {
-      setRegisButtonText("Regístrate");
+      setRegisButtonText("Registrate");
       setRegis(props.regis);
     }
   };
@@ -98,7 +97,7 @@ function MySwiper(props) {
                             style={{
                               color: "#fff",
                               marginBottom: "0",
-                              fontSize: ".85rem",
+                              fontSize: ".8rem",
                               marginTop: ".25rem",
                             }}
                           >

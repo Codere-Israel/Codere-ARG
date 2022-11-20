@@ -224,44 +224,14 @@ function Content(props) {
                 hacerlo de local.
               </p>
               <p>
-                No hay que forzar una apuesta deportiva. Si un día está
-                disponible, se hace; si ese día no está abierta, se espera a la
-                siguiente. Partidos siempre va a haber, los jugadores siempre
-                pisarán las canchas, los campeonatos seguirán...
-              </p>
-              <p>
                 Recordá que estamos apostando donde nuestra estrategia
                 incremente las probabilidades.
               </p>
-              <p>
-                Este es un mundo apasionante y en Codere queremos que disfrutes
-                desde el primer día que decidas jugar con nosotros. Seguí estos
-                tips, así como tu estrategia, y seguro la pasarás muy bien.
-              </p>
             </div>
 
-            {/* <h3 className="bottomContentSubTitle">
-              ¿Por qué Codere es el lugar más seguro para hacer tus apuestas
-              deportivas en Argentina?
-            </h3>
-            <div className="bottomContentText">
-              <p>
-                40 años de presencia en el mundo, creciendo constantemente como
-                multinacional, respaldan todas nuestras operaciones y esto nos
-                ha permitido dominar el know-how de la industria y ofrecer
-                plataformas totalmente confiables y seguras.
-              </p>
-              <p>
-                En Argentina operamos según los requerimientos de los
-                reguladores, cumpliendo con toda la legislación vigente. Todas
-                nuestras transacciones y plataformas cumplen los más altos
-                estándares en seguridad y privacidad de la industria.
-              </p>
-            </div> */}
-
-            <h3 className="bottomContentSubTitle">
+            <h2 className="bottomContentSubTitle">
               Casino Online en Argentina (CABA)
-            </h3>
+            </h2>
             <div className="bottomContentText">
               <p>
                 En Codere tenés mucho más que apuestas deportivas. Quizás ya nos
@@ -336,7 +306,7 @@ function Content(props) {
 
       <section id="acc-section">
         <h2 className="bottomContentTitle">
-          Preguntas frecuentes sobre Apuestas deportivas en Panamá
+          Preguntas frecuentes sobre Apuestas deportivas en Argentina
         </h2>
         <Accordion
           className="content-accordion"

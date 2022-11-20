@@ -4,7 +4,7 @@ import { useCountdown } from "../Hooks/useCountdown";
 import { Zoom, Slide, Fade } from "react-awesome-reveal";
 
 const Timer = () => {
-  const dateToCount = "11/20/2022 13:00";
+  const dateToCount = "2022-11-20T16:00:00Z";
   const [days, hours, minutes, seconds] = useCountdown(dateToCount);
   const ShowCounter = ({ days, hours, minutes, seconds }) => {
     return (
