@@ -4,6 +4,7 @@ import "@fontsource/roboto-condensed";
 import Header from "./Components/Header";
 import MySwiper from "./Components/MySwiper";
 import Timer from "./Components/Timer";
+import Timer2 from "./Components/Timer2.0";
 import Games from "./Components/Games";
 import Content from "./Components/Content";
 import Footer from "./Components/Footer";
@@ -24,7 +25,7 @@ function App() {
     width: undefined,
     height: undefined,
   });
-  const [showTimer, setShowTimer] = useState(true);
+  const [showTimer, setShowTimer] = useState(false);
 
   useEffect(() => {
     if (windowSize.width <= 768 || isMobile) setFlag(true);
@@ -62,8 +63,8 @@ function App() {
         <div id="first-section">
           <Header regis={regis} />
           {memoSwiper}
-          {showTimer && new Date() <= new Date("2022-11-20T16:00:00Z") ? (
-            <Timer />
+          {showTimer && new Date() <= new Date("2022-11-26T19:00:00Z") ? (
+            <Timer2 />
           ) : (
             <></>
           )}
