@@ -35,11 +35,11 @@ function SportGames() {
     axios.get(URL, { headers }).then((res) => {
       // get only the first 6 games.
       // console.log(res.data);
-      // setData(res.data.slice(0, 6));
-      // console.log(res.);
+
       setData(
         res.data
           .sort((a, b) => new Date(a.StartDate) - new Date(b.StartDate))
+          .filter((item) => item.Games.length > 0)
           .slice(0, 6)
       );
       setShowSpinner(false);
@@ -85,7 +85,11 @@ function SportGames() {
                   <Swiper
                     modules={[Autoplay, Lazy, Navigation]}
                     lazy={{ loadPrevNext: true, loadPrevNextAmount: 1 }}
-                    autoplay={{ delay: 2000 }}
+                    autoplay={{
+                      delay: 2000,
+                      pauseOnMouseEnter: true,
+                      disableOnInteraction: false,
+                    }}
                     spaceBetween={25}
                     slidesPerView={isMobile ? 1 : 3}
                     loop={true}

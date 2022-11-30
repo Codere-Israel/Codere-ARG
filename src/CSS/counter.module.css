@@ -1,8 +1,13 @@
+:root {
+  --codere_green: #79c000;
+  --grey: #333f48cc;
+}
+
 /* For STG env */
-/* @font-face {
-  font-family: Codere;
-  src: url(../fonts/HighSchool-V3.1.ttf);
-} */
+@font-face {
+  /* font-family: Codere; */
+  /* src: url(); */
+}
 
 /* For PRD */
 @font-face {
@@ -25,11 +30,11 @@
 
 .banner_info {
   text-decoration: none !important;
-  background-color: rgba(51, 63, 72, 0.8);
+  background-color: var(--grey);
   position: absolute;
   width: 23vw;
-  height: 16.5vw;
-  top: 7.5vw;
+  /* height: 20vw; */
+  top: 5.5vw;
   left: 14vw;
   color: #fff;
   text-align: center;
@@ -44,6 +49,71 @@
   font-weight: 400;
   line-height: 3.85vw;
 }
+
+.league {
+  font-size: 2vw;
+  line-height: 1.25vw;
+  margin-top: 1vw;
+}
+
+.teams {
+  font-size: 2.5vw;
+  line-height: 3vw;
+  color: var(--codere_green);
+}
+
+.offer1 {
+  font-size: 2.5vw;
+  line-height: 1.25vw;
+}
+
+.offer2 {
+  margin-top: 0.4vw;
+  line-height: 4vw;
+}
+
+.tyc {
+  font-size: 1.75vw;
+  line-height: 1.5vw;
+}
+
+.timing {
+  margin-top: 0.5vw;
+  font-size: 0.75vw;
+}
+
+/* 
+ */
+
+.bord {
+  height: 0;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  padding: 0.75vw;
+}
+.bord:before {
+  position: absolute;
+  top: 0.25vw;
+  left: 2vw;
+  content: "";
+  background: var(--codere_green);
+  height: 5px;
+  width: 5px;
+  box-shadow: 1vw 0px 0px var(--codere_green), 2vw 0px 0px var(--codere_green),
+    3vw 0px 0px var(--codere_green), 4vw 0px 0px var(--codere_green),
+    5vw 0px 0px var(--codere_green), 5vw 0px 0px var(--codere_green),
+    6vw 0px 0px var(--codere_green), 7vw 0px 0px var(--codere_green),
+    8vw 0px 0px var(--codere_green), 9vw 0px 0px var(--codere_green),
+    10vw 0px 0px var(--codere_green), 11vw 0px 0px var(--codere_green),
+    12vw 0px 0px var(--codere_green), 13vw 0px 0px var(--codere_green),
+    14vw 0px 0px var(--codere_green), 15vw 0px 0px var(--codere_green),
+    16vw 0px 0px var(--codere_green), 17vw 0px 0px var(--codere_green),
+    18vw 0px 0px var(--codere_green), 19vw 0px 0px var(--codere_green);
+}
+
+/* 
+ */
 
 .show_counter {
   z-index: 2;
@@ -79,7 +149,7 @@
   line-height: 3.2vw;
   text-align: center;
   font-family: Codere-Roboto;
-  /* font-family: "Roboto Condensed"; */
+  font-family: "Roboto Condensed";
 }
 
 .semicol {
@@ -102,13 +172,19 @@
 @media only screen and (max-width: 767px) {
   .banner_info {
     width: 75vw;
-    height: 65vw;
-    top: 26vw;
+    height: 49vw;
+    top: 18vw;
     left: 12vw;
     color: #fff;
     text-align: center;
     text-transform: uppercase;
   }
+  /* marginTop: "40vw", marginBottom: 0, lineHeight: 0 */
+  .counter_wrapper {
+    background-color: var(--grey);
+    border-radius: 8px;
+  }
+
   .count_styling {
     font-size: 10vw;
     width: 6vw;
@@ -125,6 +201,70 @@
     font-size: 11.5vw;
     font-weight: 400;
     line-height: 10vw;
+  }
+
+  .counter_wrapper > .timing {
+    font-family: Codere-Roboto;
+    font-family: "Roboto Condensed";
+    font-size: 3vw;
+    font-weight: 400;
+    line-height: 0;
+    letter-spacing: 0.5px;
+    margin-top: 38.5vw;
+    padding-top: 3vw;
+    margin-bottom: -2vw;
+  }
+
+  .league {
+    font-size: 6vw;
+    line-height: 2.5vw;
+    margin-top: 3vw !important;
+  }
+
+  .teams {
+    font-size: 8.5vw;
+    line-height: 5vw;
+    color: var(--codere_green);
+  }
+
+  .offer1 {
+    font-size: 8.5vw;
+    line-height: 1.55vw;
+  }
+
+  .tyc {
+    font-size: 5.25vw;
+    line-height: 0vw;
+  }
+
+  /* 
+   */
+
+  .bord {
+    height: 0;
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    padding: 2.75vw;
+  }
+  .bord:before {
+    position: absolute;
+    top: 3vw;
+    left: 9vw;
+    content: "";
+    background: var(--codere_green);
+    height: 4px;
+    width: 4px;
+    box-shadow: 0 0px 0px var(--codere_green), 3vw 0px 0px var(--codere_green),
+      6vw 0px 0px var(--codere_green), 9vw 0px 0px var(--codere_green),
+      12vw 0px 0px var(--codere_green), 15vw 0px 0px var(--codere_green),
+      18vw 0px 0px var(--codere_green), 21vw 0px 0px var(--codere_green),
+      24vw 0px 0px var(--codere_green), 27vw 0px 0px var(--codere_green),
+      30vw 0px 0px var(--codere_green), 33vw 0px 0px var(--codere_green),
+      36vw 0px 0px var(--codere_green), 39vw 0px 0px var(--codere_green),
+      42vw 0px 0px var(--codere_green), 45vw 0px 0px var(--codere_green),
+      48vw 0px 0px var(--codere_green), 51vw 0px 0px var(--codere_green),
+      54vw 0px 0px var(--codere_green);
   }
 
   .banner_title:nth-child(1) {

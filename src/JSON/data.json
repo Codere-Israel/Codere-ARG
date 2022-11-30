@@ -1,25 +1,32 @@
 {
   "desktop_slide_list": [
     {
+      "image": "https://www.codere.bet.ar/assets/splash-banners/template-mundo-desktop.jpg",
+      "img_alt": "arg-vs-mex",
+      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/AR-26.11.22-Goles-Arg-Mex.aspx",
+      "startDate": "",
+      "endDate": "2022-11-30T19:00:00Z"
+    },
+    {
+      "image": "https://www.codere.bet.ar/assets/splash-banners/ghana-vs-urug-desktop.jpg",
+      "img_alt": "ghana-vs-uruguay",
+      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
+      "startDate": "2022-11-30T11:00:00Z",
+      "endDate": "2022-12-02T15:00:00Z"
+    },
+    {
+      "image": "https://www.codere.bet.ar/assets/splash-banners/brasil-vs-suiza-desktop.jpg",
+      "img_alt": "brasil-vs-suiza",
+      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
+      "startDate": "2022-11-27T16:00:00Z",
+      "endDate": "2022-11-28T13:00:00Z"
+    },
+    {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/world-cup-banner-desktop.jpg",
       "img_alt": "world-cup",
       "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
       "startDate": "",
       "endDate": ""
-    },
-    {
-      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/world-cup-desktop.jpg",
-      "img_alt": "world-cup",
-      "tycLink": "",
-      "startDate": "",
-      "endDate": "2022-11-20T16:00:00Z"
-    },
-    {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/arg-vs-sa-desktop.jpg",
-      "img_alt": "world-cup",
-      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
-      "startDate": "",
-      "endDate": "2022-11-22T16:00:00Z"
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/banner8.jpg",
@@ -52,25 +59,25 @@
   ],
   "mobile_slide_list": [
     {
+      "image": "https://www.codere.bet.ar/assets/splash-banners/template-mundo-mobile.jpg",
+      "img_alt": "world-cup",
+      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/AR-26.11.22-Goles-Arg-Mex.aspx",
+      "startDate": "",
+      "endDate": "2022-11-30T19:00:00Z"
+    },
+    {
+      "image": "https://www.codere.bet.ar/assets/splash-banners/ghana-vs-urug-mobile.jpg",
+      "img_alt": "ghana-vs-uruguay",
+      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
+      "startDate": "2022-11-30T11:00:00Z",
+      "endDate": "2022-12-02T15:00:00Z"
+    },
+    {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/world-cup-banner-mobile.jpg",
       "img_alt": "world-cup",
       "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
       "startDate": "",
       "endDate": ""
-    },
-    {
-      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/world-cup-mobile.jpg",
-      "img_alt": "world-cup",
-      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
-      "startDate": "",
-      "endDate": "2022-11-20T16:00:00Z"
-    },
-    {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/arg-vs-sa-mobile.jpg",
-      "img_alt": "world-cup",
-      "tycLink": "",
-      "startDate": "",
-      "endDate": "2022-11-22T16:00:00Z"
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/bannerMobile8.jpg",

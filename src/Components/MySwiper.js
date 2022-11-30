@@ -4,6 +4,7 @@ import SlideButton from "./Slide-Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "react-bootstrap";
+import Timer2 from "./Timer2.0";
 import banners from "../JSON/data.json";
 
 import "swiper/css";
@@ -20,18 +21,16 @@ function MySwiper(props) {
   const [regisButtonText, setRegisButtonText] = useState("Registrate");
   const [regis, setRegis] = useState(props.regis);
 
+  const dateToCount = "2022-11-30T19:00:00Z";
+
+  const [showTimer, setShowTimer] = useState(false);
+  const [flag, setFlag] = useState(1);
+
   const indexHandler = (swiper) => {
-    if (swiper.realIndex === 1) props.setShowTimer(true);
-    else props.setShowTimer(false);
-    if (swiper.realIndex === imgs.length - 1) {
-      {
-        setRegisButtonText("Visitanos");
-        setRegis("https://bingos.codere.bet.ar/");
-      }
-    } else {
-      setRegisButtonText("Registrate");
-      setRegis(props.regis);
-    }
+    if (swiper.realIndex > 0) {
+      setShowTimer(false);
+      setFlag(0);
+    } else if (flag == 0) setShowTimer(true);
   };
 
   return (
@@ -47,11 +46,14 @@ function MySwiper(props) {
               modules={[Pagination, EffectFade, Autoplay, Lazy]}
               pagination={{ clickable: true }}
               effect={"fade"}
-              lazy={{ loadPrevNext: true, loadPrevNextAmount: 1 }}
-              autoplay={{ delay: 3250, disableOnInteraction: false }}
+              // lazy={{ loadPrevNext: true, loadPrevNextAmount: 1 }}
+              autoplay={{ delay: 3250, disableOnInteraction: true }}
+              // autoplay={{ delay: 3250, disableOnInteraction: false }}
               spaceBetween={0}
               slidesPerView={1}
               loop={true}
+              init={false}
+              onImagesReady={() => setShowTimer(true)}
             >
               {imgs.map((item, index) => {
                 let d1,
@@ -119,6 +121,10 @@ function MySwiper(props) {
                             </div>
                           ) : null}
                         </>
+                      )}
+                      {/* Timer for live Text */}
+                      {showTimer && new Date() < new Date(dateToCount) && (
+                        <Timer2 />
                       )}
                     </SwiperSlide>
                   );
