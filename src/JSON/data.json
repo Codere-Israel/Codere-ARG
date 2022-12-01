@@ -15,6 +15,21 @@
       "endDate": "2022-12-02T15:00:00Z"
     },
     {
+      "image": "https://www.codere.bet.ar/assets/splash-banners/franciaVsPoloniaDesktop.jpg",
+      "img_alt": "Francia vs Polonia",
+      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
+      "startDate": "2022-12-03T07:01:00Z",
+      "endDate": "2022-12-04T15:00:00Z"
+    },
+    {
+      "image": "https://www.codere.bet.ar/assets/splash-banners/argentinaVsAustraliaDesktop.jpg",
+      "img_alt": "Argentina vs Australia",
+      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
+      "startDate": "2022-12-02T12:01:00Z",
+      "endDate": "2022-12-03T19:00:00Z"
+    },
+
+    {
       "image": "https://www.codere.bet.ar/assets/splash-banners/brasil-vs-suiza-desktop.jpg",
       "img_alt": "brasil-vs-suiza",
       "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
@@ -71,6 +86,20 @@
       "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
       "startDate": "2022-11-30T11:00:00Z",
       "endDate": "2022-12-02T15:00:00Z"
+    },
+    {
+      "image": "https://www.codere.bet.ar/assets/splash-banners/franciaVsPoloniaMobile.jpg",
+      "img_alt": "Francia vs Polonia",
+      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
+      "startDate": "2022-12-03T07:01:00Z",
+      "endDate": "2022-12-04T15:00:00Z"
+    },
+    {
+      "image": "https://www.codere.bet.ar/assets/splash-banners/argentinaVsAustraliaMobile.jpg",
+      "img_alt": "Argentina vs Australia",
+      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
+      "startDate": "2022-12-02T12:01:00Z",
+      "endDate": "2022-12-03T19:00:00Z"
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/world-cup-banner-mobile.jpg",
