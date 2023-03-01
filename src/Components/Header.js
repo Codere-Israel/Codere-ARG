@@ -70,6 +70,11 @@ function Header(props) {
       url: "https://m.caba.codere.bet.ar/deportes/#/CasinoPage",
     },
     {
+      icon: faCoins,
+      name: "Casino en vivo",
+      url: "https://m.caba.codere.bet.ar/deportes/#/CasinoPage?filter=En%20Vivo",
+    },
+    {
       icon: faBullhorn,
       name: "Promociones",
       url: "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
