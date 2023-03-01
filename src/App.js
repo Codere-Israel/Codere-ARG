@@ -59,7 +59,8 @@ function App() {
     <div className="App">
       <isMobileContext.Provider value={flag}>
         <Header regis={regis} flag={flag} />
-        {/* <CookieConsent
+        {
+         <CookieConsent
             cookieName="codere_cookie"
             expires={365}
             buttonText="- Aceptar -"
@@ -81,7 +82,8 @@ function App() {
               política de cookies
             </a>
             .
-          </CookieConsent> */}
+          </CookieConsent> 
+          }
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route exact path="casino/casino-en-vivo">
