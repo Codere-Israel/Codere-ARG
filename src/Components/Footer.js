@@ -101,7 +101,7 @@ function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a
-                      href="https://www.codere.bet.ar/juego-responsable"
+                      href="/ayuda/juego-responsable"
                       title=""
                       rel="nofollow"
                     >
@@ -119,7 +119,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="https://www.codere.bet.ar/informaci%C3%B3n-legal/reglas"
+                      href="/ayuda/reglas"
                       title=""
                       rel="nofollow"
                     >
@@ -128,7 +128,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="https://www.codere.bet.ar/informaci%C3%B3n-legal/politica-de-cookies"
+                      href="/ayuda/contrato-y-politica-de-privacidad"
                       title=""
                       target={"_blank"}
                       rel="nofollow"
@@ -138,7 +138,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="https://www.codere.bet.ar/informaci%C3%B3n-legal/politica-de-cookies"
+                      href="/ayuda/politica-de-cookies"
                       title=""
                       rel="nofollow"
                     >
@@ -155,7 +155,7 @@ function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a
-                      href="https://www.codere.bet.ar/resultados-y-estad%C3%ADsticas"
+                      href="/ayuda/resultados-y-estadisticas"
                       title=""
                       rel="nofollow"
                     >
@@ -163,20 +163,20 @@ function Footer() {
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.codere.bet.ar/casino">Casino</a>
+                    <a href="/casino">Casino</a>
                   </li>
                   <li>
-                    <a href="https://www.codere.bet.ar/casino/blackjack">
+                    <a href="/casino/blackjack">
                       Blackjack
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.codere.bet.ar/casino/tragamonedas-slots-online">
+                    <a href="/casino/tragamonedas-slots-online">
                       Slots
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.codere.bet.ar/casino/ruleta-online">
+                    <a href="/casino/ruleta-online">
                       Ruleta
                     </a>
                   </li>
@@ -190,7 +190,7 @@ function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a
-                      href="https://www.codere.bet.ar/dep%C3%B3sitos/dep%C3%B3sito-online"
+                      href="/ayuda/deposito-online"
                       title=""
                     >
                       Info Depósitos y Cobros
@@ -198,7 +198,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="https://www.codere.bet.ar/apuestas/c%C3%B3mo-y-d%C3%B3nde-apostar"
+                      href="/ayuda/como-y-donde-apostar"
                       title=""
                     >
                       Cómo Apostar
@@ -213,7 +213,7 @@ function Footer() {
                 <span className="title">AYUDA</span>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="https://www.codere.bet.ar/ayuda" title="">
+                    <a href="/ayuda" title="">
                       Términos y Condiciones
                     </a>
                   </li>

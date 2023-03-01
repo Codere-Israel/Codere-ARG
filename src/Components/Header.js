@@ -70,6 +70,11 @@ function Header(props) {
       url: "https://m.caba.codere.bet.ar/deportes/#/CasinoPage",
     },
     {
+      icon: faCoins,
+      name: "Casino en vivo",
+      url: "https://m.caba.codere.bet.ar/deportes/#/CasinoPage?filter=En%20Vivo",
+    },
+    {
       icon: faBullhorn,
       name: "Promociones",
       url: "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
@@ -82,20 +87,20 @@ function Header(props) {
   ];
 
   const seo_menu = [
-    { name: "Casino", url: "https://www.codere.bet.ar/casino", icon: faCoins },
+    { name: "Casino", url: "/casino", icon: faCoins },
     {
       name: "Ruleta",
-      url: "https://www.codere.bet.ar/casino/ruleta-online",
+      url: "/casino/ruleta-online",
       icon: faStar,
     },
     {
       name: "Slots",
-      url: "https://www.codere.bet.ar/casino/tragamonedas-slots-online",
+      url: "/casino/tragamonedas-slots-online",
       icon: faFlag,
     },
     {
       name: "Blackjack",
-      url: "https://www.codere.bet.ar/casino/blackjack",
+      url: "/casino/blackjack",
       icon: faHeart,
     },
   ];
