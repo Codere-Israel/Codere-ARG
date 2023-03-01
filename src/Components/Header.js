@@ -25,6 +25,7 @@ import {
   faStar,
   faHeart,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link, NavLink } from "react-router-dom";
 
 class PostUser {
   constructor(loginName, password) {
@@ -42,13 +43,62 @@ function Header(props) {
   // const URL = "https://dm.apuestas.codere.es/LoginServicesESApi/login/web";
 
   const LOGO =
-    "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/Splash/riverPlateTopLogo.svg";
+    new Date() >= new Date("2022-12-30T22:00:00Z")
+      ? "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/Splash/riverPlateTopLogo.svg"
+      : "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/christmassLogo.gif";
 
   // Hooks
   const [show, setShow] = useState(false);
   const [email, setEmail] = useState("");
   const [pw, setPassword] = useState("");
   const [hamburger, setHamburger] = useState(false);
+
+  const menu = [
+    {
+      icon: faCrosshairs,
+      name: "Deportes",
+      url: "https://m.caba.codere.bet.ar/deportes/#/HomePage",
+    },
+    {
+      icon: faCirclePlay,
+      name: "Directo",
+      url: "https://m.caba.codere.bet.ar/deportes/#/DirectosPage",
+    },
+    {
+      icon: faCoins,
+      name: "Casino",
+      url: "https://m.caba.codere.bet.ar/deportes/#/CasinoPage",
+    },
+    {
+      icon: faBullhorn,
+      name: "Promociones",
+      url: "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
+    },
+    {
+      icon: faGlobe,
+      name: "Nuestras Salas",
+      url: "https://bingos.codere.bet.ar",
+    },
+  ];
+
+  const seo_menu = [
+    { name: "Casino", url: "https://www.codere.bet.ar/casino", icon: faCoins },
+    {
+      name: "Ruleta",
+      url: "https://www.codere.bet.ar/casino/ruleta-online",
+      icon: faStar,
+    },
+    {
+      name: "Slots",
+      url: "https://www.codere.bet.ar/casino/tragamonedas-slots-online",
+      icon: faFlag,
+    },
+    {
+      name: "Blackjack",
+      url: "https://www.codere.bet.ar/casino/blackjack",
+      icon: faHeart,
+    },
+  ];
 
   // Handlers
   // const handleClose = () => setShow(false);
@@ -80,6 +130,41 @@ function Header(props) {
   //     console.log(res.data);
   //   });
   // }
+
+  // const modal = () => {
+  //   return (
+  //     <>
+  //       <Modal id="modal_app" show={show} onHide={handleClose}>
+  //         <Modal.Header closeButton>
+  //           <Modal.Title>Log-In</Modal.Title>
+  //         </Modal.Header>
+  //         <Modal.Body>
+  //           <Form className="test" onSubmit={formHandler}>
+  //             <Form.Group
+  //               className="mb-3"
+  //               controlId="exampleForm.ControlInput1"
+  //             >
+  //               <Form.Control
+  //                 type="text"
+  //                 onChange={emailHandler}
+  //                 placeholder="Usuario ó Correo Electrónico"
+  //               />
+  //             </Form.Group>
+  //             <Form.Group className="mb-3" controlId="formBasicPassword">
+  //               <Form.Control
+  //                 type="password"
+  //                 placeholder="Password"
+  //                 onChange={pwHandler}
+  //                 required
+  //               />
+  //             </Form.Group>
+  //             <input type="submit" className="login_btn" value="Log-In" />
+  //           </Form>
+  //         </Modal.Body>
+  //       </Modal>
+  //     </>
+  //   );
+  // };
 
   const hamburgerHandler = (evt) => {
     let flag = false;
@@ -117,80 +202,28 @@ function Header(props) {
                     pageWrapId={"page-wrap"}
                     outerContainerId={"outer-container"}
                   >
-                    {/* <a href="#">
-                  <FontAwesomeIcon icon={faRightToBracket} />
-                  Acceder <FontAwesomeIcon icon={faAngleRight} />
-                </a> */}
-                    <a
-                      href="https://m.caba.codere.bet.ar/deportes/#/HomePage"
-                      rel="nofollow"
-                    >
-                      <FontAwesomeIcon icon={faCrosshairs} />
-                      Deportes
-                      <FontAwesomeIcon icon={faAngleRight} />
-                    </a>
-                    <a
-                      href="https://m.caba.codere.bet.ar/deportes/#/DirectosPage"
-                      rel="nofollow"
-                    >
-                      <FontAwesomeIcon icon={faCirclePlay} />
-                      Directo
-                      <FontAwesomeIcon icon={faAngleRight} />
-                    </a>
-                    <a
-                      href="https://m.caba.codere.bet.ar/deportes/#/CasinoPage"
-                      rel="nofollow"
-                    >
-                      <FontAwesomeIcon icon={faCoins} />
-                      Casino
-                      <FontAwesomeIcon icon={faAngleRight} />
-                    </a>
-                    <a
-                      href="https://m.caba.codere.bet.ar/deportes/#/PromotionsPage"
-                      rel="nofollow"
-                    >
-                      <FontAwesomeIcon icon={faBullhorn} />
-                      Promociones
-                      <FontAwesomeIcon icon={faAngleRight} />
-                    </a>
-                    <a href="https://bingos.codere.bet.ar/" rel="nofollow">
-                      <FontAwesomeIcon icon={faGlobe} />
-                      Nuestras Salas
-                      <FontAwesomeIcon icon={faAngleRight} />
-                    </a>
+                    {menu.map((m, k) => (
+                      <NavLink key={k} to={m.url} rel="nofollow">
+                        <FontAwesomeIcon icon={m.icon} />
+                        {m.name}
+                        <FontAwesomeIcon icon={faAngleRight} />
+                      </NavLink>
+                    ))}
+
                     <Accordion className="hamb-accordion">
                       <Accordion.Item eventKey="0">
                         <Accordion.Header>¿Cómo jugar?</Accordion.Header>
                         <Accordion.Body>
                           <ul>
-                            <li>
-                              <a href="https://www.codere.bet.ar/casino">
-                                <FontAwesomeIcon icon={faCoins} />
-                                Casino
-                                <FontAwesomeIcon icon={faAngleRight} />
-                              </a>
-                            </li>
-                            <li>
-                              <a href="https://www.codere.bet.ar/casino/ruleta-online">
-                                <FontAwesomeIcon icon={faStar} />
-                                Rutleta
-                                <FontAwesomeIcon icon={faAngleRight} />
-                              </a>
-                            </li>
-                            <li>
-                              <a href="https://www.codere.bet.ar/casino/tragamonedas-slots-online">
-                                <FontAwesomeIcon icon={faFlag} />
-                                Slots
-                                <FontAwesomeIcon icon={faAngleRight} />
-                              </a>
-                            </li>
-                            <li>
-                              <a href="https://www.codere.bet.ar/casino/blackjack">
-                                <FontAwesomeIcon icon={faHeart} />
-                                Blackjack
-                                <FontAwesomeIcon icon={faAngleRight} />
-                              </a>
-                            </li>
+                            {seo_menu.map((s, k) => (
+                              <li key={k}>
+                                <NavLink to={s.url}>
+                                  <FontAwesomeIcon icon={s.icon} />
+                                  {s.name}
+                                  <FontAwesomeIcon icon={faAngleRight} />
+                                </NavLink>
+                              </li>
+                            ))}
                           </ul>
                         </Accordion.Body>
                       </Accordion.Item>
@@ -208,7 +241,6 @@ function Header(props) {
                   />
                 </a>
                 <div id="header_buttons">
-                  {/* onClick={handleShow} */}
                   <Button
                     href={acceder}
                     className="acceder-button header_btn"
@@ -238,51 +270,30 @@ function Header(props) {
                 </a>
 
                 <Nav className="me-auto">
-                  <Nav.Link
-                    href="https://m.caba.codere.bet.ar/deportes/#/HomePage"
-                    rel="nofollow"
-                  >
-                    DEPORTES
-                  </Nav.Link>
-                  <Nav.Link
-                    href="https://m.caba.codere.bet.ar/deportes/#/DirectosPage"
-                    rel="nofollow"
-                  >
-                    DIRECTO
-                  </Nav.Link>
-                  <Nav.Link
-                    href="https://m.caba.codere.bet.ar/deportes/#/CasinoPage"
-                    rel="nofollow"
-                  >
-                    CASINO
-                  </Nav.Link>
-                  <Nav.Link
-                    href="https://m.caba.codere.bet.ar/deportes/#/PromotionsPage"
-                    rel="nofollow"
-                  >
-                    PROMOCIONES
-                  </Nav.Link>
-                  <Nav.Link href="https://bingos.codere.bet.ar/" rel="nofollow">
-                    NUESTRAS SALAS
-                  </Nav.Link>
+                  {menu.map((m, k) => (
+                    <Nav.Link key={k} href={m.url} rel="nofollow">
+                      <span style={{ textTransform: "uppercase" }}>
+                        {m.name}
+                      </span>
+                    </Nav.Link>
+                  ))}
                 </Nav>
                 <Dropdown>
                   <Dropdown.Toggle className="header_btn">
                     <FontAwesomeIcon icon={faAngleDown} />
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Dropdown.Item href="https://www.codere.bet.ar/casino">
-                      Casino
-                    </Dropdown.Item>
-                    <Dropdown.Item href="https://www.codere.bet.ar/casino/ruleta-online">
-                      Ruleta
-                    </Dropdown.Item>
-                    <Dropdown.Item href="https://www.codere.bet.ar/casino/tragamonedas-slots-online">
-                      Slots
-                    </Dropdown.Item>
-                    <Dropdown.Item href="https://www.codere.bet.ar/casino/blackjack">
-                      Blackjack
-                    </Dropdown.Item>
+                    <Link
+                      style={{ textDecoration: "none" }}
+                      to={"/casino/casino-en-vivo"}
+                    >
+                      <Dropdown.Item as={"p"}>Casino en vivo</Dropdown.Item>
+                    </Link>
+                    {seo_menu.map((s, k) => (
+                      <Dropdown.Item key={k} href={s.url}>
+                        {s.name}
+                      </Dropdown.Item>
+                    ))}
                   </Dropdown.Menu>
                 </Dropdown>
                 <Button
@@ -302,31 +313,6 @@ function Header(props) {
                 </Button>
               </Container>
             )}
-            {/* <Modal id="modal_app" show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Log-In</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-            <Form className="test" onSubmit={formHandler}>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Control
-            type="text"
-            onChange={emailHandler}
-            placeholder="Usuario ó Correo Electrónico"
-            />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Control
-            type="password"
-            placeholder="Password"
-            onChange={pwHandler}
-            required
-            />
-            </Form.Group>
-            <input type="submit" className="login_btn" value="Log-In" />
-            </Form>
-            </Modal.Body>
-          </Modal> */}
           </Navbar>
         );
       }}

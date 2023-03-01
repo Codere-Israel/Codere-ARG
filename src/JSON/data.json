@@ -1,140 +1,80 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/PaísesBajosVsEstadosUnidosDesktop.jpg",
-      "img_alt": "Países Bajos vs Estados Unidos",
-      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
-      "startDate": "2022-12-01T15:00:00Z",
-      "endDate": "2022-12-03T15:00:00Z"
+      "image": "https://www.codere.bet.ar/assets/splash-banners/vill-vs-rm-desktop.jpg",
+      "img_alt": "vill-vs-rm",
+      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/WB%20ARG%20SPORT.aspx",
+      "startDate": "2023-01-05T12:00:00Z",
+      "endDate": "2023-01-07T15:15:00Z",
+      "scheduled": true
     },
     {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/ghana-vs-urug-desktop.jpg",
-      "img_alt": "ghana-vs-uruguay",
-      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
-      "startDate": "2022-11-30T11:00:00Z",
-      "endDate": "2022-12-02T15:00:00Z"
-    },
-    {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/franciaVsPoloniaDesktop.jpg",
-      "img_alt": "Francia vs Polonia",
-      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
-      "startDate": "2022-12-03T07:01:00Z",
-      "endDate": "2022-12-04T15:00:00Z"
-    },
-    {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/argentinaVsAustraliaDesktop.jpg",
-      "img_alt": "Argentina vs Australia",
-      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
-      "startDate": "2022-12-02T12:01:00Z",
-      "endDate": "2022-12-03T19:00:00Z"
-    },
-
-    {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/brasil-vs-suiza-desktop.jpg",
-      "img_alt": "brasil-vs-suiza",
-      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
-      "startDate": "2022-11-27T16:00:00Z",
-      "endDate": "2022-11-28T13:00:00Z"
-    },
-    {
-      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/world-cup-banner-desktop.jpg",
-      "img_alt": "world-cup",
-      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
-      "startDate": "",
-      "endDate": ""
+      "image": "https://www.codere.bet.ar/assets/splash-banners/rp-offer-desktop.jpg",
+      "img_alt": "river-plate",
+      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/WB%20ARG%20SPORT.aspx",
+      "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/banner8.jpg",
       "img_alt": "Casino",
-      "tycLink": "",
-      "startDate": "",
-      "endDate": ""
+      "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/banner2.jpg",
       "img_alt": "Online Codere",
-      "tycLink": "",
-      "startDate": "",
-      "endDate": ""
+      "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/payment-banner-desktop.jpg",
       "img_alt": "Methodos",
-      "tycLink": "",
-      "startDate": "",
-      "endDate": ""
+      "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/diver_desktop.jpg",
       "img_alt": "Bingo",
-      "tycLink": "",
-      "startDate": "",
-      "endDate": ""
+      "ctaText": "visitanos",
+      "ctaURL": "https://bingos.codere.bet.ar/",
+      "scheduled": false
     }
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/PaísesBajosVsEstadosUnidosMobile.jpg",
-      "img_alt": "Países Bajos vs Estados Unidos",
-      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
-      "startDate": "2022-12-01T15:00:00Z",
-      "endDate": "2022-12-03T15:00:00Z"
+      "image": "https://www.codere.bet.ar/assets/splash-banners/vill-vs-rm-mobile.jpg",
+      "img_alt": "vill-vs-rm",
+      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/WB%20ARG%20SPORT.aspx",
+      "startDate": "2023-01-05T12:00:00Z",
+      "endDate": "2023-01-07T15:15:00Z",
+      "scheduled": true
     },
     {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/ghana-vs-urug-mobile.jpg",
-      "img_alt": "ghana-vs-uruguay",
-      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
-      "startDate": "2022-11-30T11:00:00Z",
-      "endDate": "2022-12-02T15:00:00Z"
-    },
-    {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/franciaVsPoloniaMobile.jpg",
-      "img_alt": "Francia vs Polonia",
-      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
-      "startDate": "2022-12-03T07:01:00Z",
-      "endDate": "2022-12-04T15:00:00Z"
-    },
-    {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/argentinaVsAustraliaMobile.jpg",
-      "img_alt": "Argentina vs Australia",
-      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
-      "startDate": "2022-12-02T12:01:00Z",
-      "endDate": "2022-12-03T19:00:00Z"
-    },
-    {
-      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/world-cup-banner-mobile.jpg",
-      "img_alt": "world-cup",
-      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
-      "startDate": "",
-      "endDate": ""
+      "image": "https://www.codere.bet.ar/assets/splash-banners/rp-offer-mobile.jpg",
+      "img_alt": "river-plate",
+      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/WB%20ARG%20SPORT.aspx",
+      "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/bannerMobile8.jpg",
       "img_alt": "Casino",
-      "tycLink": "",
-      "startDate": "",
-      "endDate": ""
+      "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/bannerMobile2.jpg",
       "img_alt": "Online Codere",
       "tycLink": "",
-      "startDate": "",
-      "endDate": ""
+      "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/payment-banner-mobile.jpg",
       "img_alt": "Métodos de Pago",
       "tycLink": "",
-      "startDate": "",
-      "endDate": ""
+      "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/bannerMobile6.jpg",
       "img_alt": "Bingo",
       "tycLink": "",
-      "startDate": "",
-      "endDate": ""
+      "scheduled": false,
+      "ctaText": "visitanos"
     }
   ]
 }

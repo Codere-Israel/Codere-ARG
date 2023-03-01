@@ -7,26 +7,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Lazy, Navigation } from "swiper";
 import { Card } from "react-bootstrap";
 import axios from "axios";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleChevronRight,
-  faCircleChevronLeft,
-  faChevronRight,
-  faChevronLeft,
-} from "@fortawesome/free-solid-svg-icons";
 import { BarLoader } from "react-spinners";
 import "swiper/css/navigation";
-
-const URL =
-  "https://coderesbgonlinesbsbanners.azurewebsites.net/api/feeds/leagues/5108021769/1/GetEventsByLeagueAndMarketId";
-const headers = {
-  CodereAffiliateApiKey: "GUY%20AFFILIATE%201",
-  CodereAffiliateApiSecret: "cb82be80-d58a-4c7a-a523-a4a9dd98f237",
-};
 
 const spinnerCss = { margin: "auto", marginTop: "4rem", marginBottom: "2rem" };
 
 function SportGames() {
+  const URL = process.env.REACT_APP_GAMES_API;
+  const headers = {
+    CodereAffiliateApiKey: process.env.REACT_APP_AFFILIATE_API_KEY,
+    CodereAffiliateApiSecret: process.env.REACT_APP_AFFILIATE_API_SECRET,
+  };
+
   const [data, setData] = useState([]);
   const [showSpinner, setShowSpinner] = useState(true);
 
@@ -35,12 +27,11 @@ function SportGames() {
     axios.get(URL, { headers }).then((res) => {
       // get only the first 6 games.
       // console.log(res.data);
-
       setData(
         res.data
           .sort((a, b) => new Date(a.StartDate) - new Date(b.StartDate))
           .filter((item) => item.Games.length > 0)
-          .slice(0, 6)
+          .slice(0, 2)
       );
       setShowSpinner(false);
       // setData(res.data);
@@ -74,165 +65,141 @@ function SportGames() {
         <BarLoader color="#79c000" cssOverride={spinnerCss} />
       ) : (
         <div className={sportCSS.sport_games_slider}>
-          {/* {console.log(data)} */}
-          <isMobileContext.Consumer>
-            {(isMobile) => {
-              return (
-                <>
-                  <h2 style={{ color: "#79c000", fontWeight: "700" }}>
-                    Copa Mundial 2022
-                  </h2>
-                  <Swiper
-                    modules={[Autoplay, Lazy, Navigation]}
-                    lazy={{ loadPrevNext: true, loadPrevNextAmount: 1 }}
-                    autoplay={{
-                      delay: 2000,
-                      pauseOnMouseEnter: true,
-                      disableOnInteraction: false,
-                    }}
-                    spaceBetween={25}
-                    slidesPerView={isMobile ? 1 : 3}
-                    loop={true}
-                    navigation={{
-                      prevEl: ".prev",
-                      nextEl: ".next",
-                    }}
-                  >
-                    {data.map((item, key) => (
-                      <SwiperSlide
-                        key={key}
-                        style={{ color: "#fff", fontSize: "1.2rem" }}
-                      >
-                        <Card className={sportCSS.card} bg="dark">
-                          <div className={sportCSS.startdate}>
-                            <span>{dateFix(item.StartDate)}</span>
-                            <span>{getGameHour(item.StartDate)}</span>
-                          </div>
-                          <div className={sportCSS.row + " row"}>
-                            <div className={sportCSS.col + " col-4"}>
-                              <img
-                                style={{
-                                  width: "auto",
-                                  padding: "8px",
-                                  marginBottom: ".25rem",
-                                }}
-                                src={
-                                  "https://www.codere.bet.ar/copaflags1/" +
-                                  item.Games[0].Results[0].Name +
-                                  ".png"
-                                }
-                              />
-                              <Card.Link
-                                className={sportCSS.url}
-                                href={
-                                  "https://m.caba.codere.bet.ar/deportes/#/HomePage?addbet=" +
-                                  item.Games[0].Results[0].NodeId
-                                }
-                              >
-                                <div className={sportCSS.frame}>
-                                  <div>
-                                    {item.Games[0].Results[0].Name.includes(
-                                      "Sur"
-                                    )
-                                      ? "Corea del S"
-                                      : item.Games[0].Results[0].Name}
-                                  </div>
-
-                                  <div>
-                                    {parseFloat(
-                                      item.Games[0].Results[0].Odd
-                                    ).toFixed(2)}
-                                  </div>
-                                </div>
-                              </Card.Link>
+          <>
+            <h2 style={{ color: "#79c000", fontWeight: "700" }}>
+              Copa Mundial 2022
+            </h2>
+            <Swiper
+              modules={[Autoplay, Lazy, Navigation]}
+              lazy={{ loadPrevNext: true, loadPrevNextAmount: 1 }}
+              autoplay={{
+                delay: 2000,
+                pauseOnMouseEnter: true,
+                disableOnInteraction: false,
+              }}
+              spaceBetween={25}
+              slidesPerView={1}
+              loop={data.length > 1 ? true : false}
+            >
+              {data.map((item, key) => (
+                <SwiperSlide
+                  key={key}
+                  style={{ color: "#fff", fontSize: "1.2rem" }}
+                >
+                  <Card className={sportCSS.card} bg="dark">
+                    <div className={sportCSS.startdate}>
+                      <span>{dateFix(item.StartDate)}</span>
+                      <span>{getGameHour(item.StartDate)}</span>
+                    </div>
+                    <div className={sportCSS.row + " row"}>
+                      <div className={sportCSS.col + " col-4"}>
+                        <img
+                          style={{
+                            width: "auto",
+                            padding: "8px",
+                            marginBottom: ".25rem",
+                          }}
+                          src={
+                            "https://www.codere.bet.ar/copaflags1/" +
+                            item.Games[0].Results[0].Name +
+                            ".png"
+                          }
+                        />
+                        <Card.Link
+                          className={sportCSS.url}
+                          href={
+                            "https://m.caba.codere.bet.ar/deportes/#/HomePage?addbet=" +
+                            item.Games[0].Results[0].NodeId
+                          }
+                        >
+                          <div className={sportCSS.frame}>
+                            <div>
+                              {item.Games[0].Results[0].Name.includes("Sur")
+                                ? "Corea del S"
+                                : item.Games[0].Results[0].Name}
                             </div>
+
+                            <div>
+                              {parseFloat(item.Games[0].Results[0].Odd).toFixed(
+                                2
+                              )}
+                            </div>
+                          </div>
+                        </Card.Link>
+                      </div>
+                      <div
+                        className={sportCSS.vs + " col-4"}
+                        style={{
+                          fontSize: "2rem",
+                          paddingTop: "0",
+                        }}
+                      >
+                        vs
+                        <Card.Link
+                          className={sportCSS.url}
+                          href={
+                            "https://m.caba.codere.bet.ar/deportes/#/HomePage?addbet=" +
+                            item.Games[0].Results[1].NodeId
+                          }
+                        >
+                          <div className={sportCSS.frame}>
                             <div
-                              className={sportCSS.vs + " col-4"}
                               style={{
-                                fontSize: "2rem",
-                                paddingTop: "0",
+                                fontSize: "1.2rem",
+                                marginTop: "1.4rem",
                               }}
                             >
-                              vs
-                              <Card.Link
-                                className={sportCSS.url}
-                                href={
-                                  "https://m.caba.codere.bet.ar/deportes/#/HomePage?addbet=" +
-                                  item.Games[0].Results[1].NodeId
-                                }
-                              >
-                                <div className={sportCSS.frame}>
-                                  <div
-                                    style={{
-                                      fontSize: "1.2rem",
-                                      marginTop: "1.4rem",
-                                    }}
-                                  >
-                                    X
-                                  </div>
-                                  <div style={{ fontSize: "1.2rem" }}>
-                                    {parseFloat(
-                                      item.Games[0].Results[1].Odd
-                                    ).toFixed(2)}
-                                  </div>
-                                </div>
-                              </Card.Link>
+                              X
                             </div>
-
-                            <div className={sportCSS.col + " col-4"}>
-                              <img
-                                style={{
-                                  width: "auto",
-                                  padding: "8px",
-                                  marginBottom: ".25rem",
-                                }}
-                                src={
-                                  "https://www.codere.bet.ar/copaflags1/" +
-                                  item.Games[0].Results[2].Name +
-                                  ".png"
-                                }
-                              />
-                              <div className={sportCSS.frame}>
-                                <Card.Link
-                                  className={sportCSS.url}
-                                  href={
-                                    "https://m.caba.codere.bet.ar/deportes/#/HomePage?addbet=" +
-                                    item.Games[0].Results[2].NodeId
-                                  }
-                                >
-                                  <div>
-                                    {item.Games[0].Results[2].Name.includes(
-                                      "Sur"
-                                    )
-                                      ? "Corea Rep."
-                                      : item.Games[0].Results[2].Name}
-                                  </div>
-                                  <div>
-                                    {parseFloat(
-                                      item.Games[0].Results[2].Odd
-                                    ).toFixed(2)}
-                                  </div>
-                                </Card.Link>
-                              </div>
+                            <div style={{ fontSize: "1.2rem" }}>
+                              {parseFloat(item.Games[0].Results[1].Odd).toFixed(
+                                2
+                              )}
                             </div>
                           </div>
-                        </Card>
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
-                </>
-              );
-            }}
-          </isMobileContext.Consumer>
+                        </Card.Link>
+                      </div>
 
-          <div className={sportCSS.arrows}>
-            <div className={sportCSS.prev + " prev"}>
-              <FontAwesomeIcon icon={faChevronLeft} />
-            </div>
-            <div className={sportCSS.next + " next"}>
-              <FontAwesomeIcon icon={faChevronRight} />
-            </div>
-          </div>
+                      <div className={sportCSS.col + " col-4"}>
+                        <img
+                          style={{
+                            width: "auto",
+                            padding: "8px",
+                            marginBottom: ".25rem",
+                          }}
+                          src={
+                            "https://www.codere.bet.ar/copaflags1/" +
+                            item.Games[0].Results[2].Name +
+                            ".png"
+                          }
+                        />
+                        <div className={sportCSS.frame}>
+                          <Card.Link
+                            className={sportCSS.url}
+                            href={
+                              "https://m.caba.codere.bet.ar/deportes/#/HomePage?addbet=" +
+                              item.Games[0].Results[2].NodeId
+                            }
+                          >
+                            <div>
+                              {item.Games[0].Results[2].Name.includes("Sur")
+                                ? "Corea Rep."
+                                : item.Games[0].Results[2].Name}
+                            </div>
+                            <div>
+                              {parseFloat(item.Games[0].Results[2].Odd).toFixed(
+                                2
+                              )}
+                            </div>
+                          </Card.Link>
+                        </div>
+                      </div>
+                    </div>
+                  </Card>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </>
         </div>
       )}
     </>

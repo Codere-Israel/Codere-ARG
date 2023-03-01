@@ -4,7 +4,7 @@ import { useCountdown } from "../Hooks/useCountdown";
 import { Zoom, Slide, Fade } from "react-awesome-reveal";
 
 const Timer = () => {
-  const dateToCount = "2022-11-30T19:00:00Z";
+  const dateToCount = "2022-12-18T15:00:00Z";
   const [days, hours, minutes, seconds] = useCountdown(dateToCount);
   const ShowCounter = ({ days, hours, minutes, seconds }) => {
     return (
@@ -49,20 +49,20 @@ const Timer = () => {
     >
       <Fade triggerOnce={true} duration={750}>
         <div className={`${counterCSS.banner_title} ${counterCSS.league}`}>
-          Copa Mundial 2022
+          Final Copa Mundial 2022
         </div>
         <div className={`${counterCSS.banner_title} ${counterCSS.teams}`}>
-          Polonia vs Argentina
+          Argentina vs Francia
         </div>
         <div className={counterCSS.bord}></div>
         <div className={`${counterCSS.banner_title} ${counterCSS.offer1}`}>
-          Apostá $1.000
+          Duplicamos el 100%
+        </div>
+        <div className={`${counterCSS.banner_title} ${counterCSS.offer1}`}>
+          de tu primer depósito
         </div>
         <div className={`${counterCSS.banner_title} ${counterCSS.offer2}`}>
-          y recibí $500
-        </div>
-        <div className={`${counterCSS.banner_title} ${counterCSS.tyc}`}>
-          por cada gol de la selección
+          hasta $5.000
         </div>
       </Fade>
       {ShowCounter({ days, hours, minutes, seconds })}

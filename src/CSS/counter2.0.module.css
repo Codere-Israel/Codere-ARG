@@ -4,20 +4,20 @@
 }
 
 /* For STG env */
-@font-face {
+/* @font-face {
   font-family: Codere;
   src: url(../fonts/HighSchool-V3.1.ttf);
-}
+} */
 
 /* For PRD */
-/* @font-face {
+@font-face {
   font-family: Codere;
   src: url(https://www.codere.bet.ar/Fonts/HighSchool-V3.1.ttf);
 }
 @font-face {
   font-family: Codere-Roboto;
   src: url(https://www.codere.bet.ar/Fonts/roboto-all-400-normal.woff);
-} */
+}
 
 .banner_info:hover,
 .banner_info span,
@@ -63,13 +63,13 @@
 }
 
 .offer1 {
-  font-size: 2.5vw;
-  line-height: 1vw;
+  font-size: 2vw;
+  line-height: 1.75vw;
 }
 
 .offer2 {
   margin-top: 0.4vw;
-  line-height: 4vw;
+  line-height: 2.25vw;
 }
 
 .tyc {
@@ -90,7 +90,7 @@
   width: 100%;
   border-radius: 20px;
   position: relative;
-  padding: 0.75vw;
+  padding: 0.5vw;
 }
 .bord:before {
   position: absolute;
@@ -172,7 +172,7 @@
 @media only screen and (max-width: 767px) {
   .banner_info {
     width: 75vw;
-    height: 51vw;
+    height: 63vw;
     top: 4vw;
     left: 12vw;
     color: #fff;
@@ -181,11 +181,11 @@
   }
   /* marginTop: "40vw", marginBottom: 0, lineHeight: 0 */
   .counter_wrapper {
-    background-color: var(--grey);
-    border-radius: 8px;
-    width: 68vw;
-    height: 20vw;
-    margin: auto;
+    /* background-color: var(--grey); */
+    /* border-radius: 8px; */
+    /* width: 68vw; */
+    /* height: 20vw; */
+    /* margin: auto; */
   }
 
   .count_styling {
@@ -195,6 +195,7 @@
     line-height: 9.5vw;
     margin-top: 3vw;
   }
+
   .time_unit {
     font-size: 0.55rem !important;
   }
@@ -203,19 +204,19 @@
     font-family: Codere;
     font-size: 11.5vw;
     font-weight: 400;
-    line-height: 10vw;
+    line-height: 7vw;
   }
 
   .counter_wrapper > .timing {
     font-family: Codere-Roboto;
     font-family: "Roboto Condensed";
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-weight: 400;
     line-height: 0;
     letter-spacing: 0.5px;
-    margin-top: 39.75vw;
-    padding-top: 3vw;
-    margin-bottom: -2vw;
+    /* margin-top: 39.75vw; */
+    padding-top: 3.5vw;
+    margin-bottom: -3vw;
   }
 
   .league {
@@ -231,8 +232,12 @@
   }
 
   .offer1 {
-    font-size: 8.5vw;
-    line-height: 4vw;
+    font-size: 7vw;
+    line-height: 0.5;
+  }
+  .offer2 {
+    margin-top: -2vw;
+    line-height: 0.75;
   }
 
   .tyc {
@@ -244,7 +249,7 @@
    */
 
   .bord {
-    padding: 2.75vw;
+    padding: 2vw;
   }
   .bord:before {
     top: 3vw;
@@ -264,7 +269,7 @@
   }
 
   .banner_title:nth-child(1) {
-    margin-top: 4vw;
+    margin-top: 3.2vw;
   }
   .semicol {
     font-size: 1.5rem;
