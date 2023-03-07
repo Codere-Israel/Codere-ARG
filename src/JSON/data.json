@@ -1,11 +1,11 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/vill-vs-rm-desktop.jpg",
-      "img_alt": "vill-vs-rm",
-      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/WB%20ARG%20SPORT.aspx",
-      "startDate": "2023-01-05T12:00:00Z",
-      "endDate": "2023-01-07T15:15:00Z",
+      "image": "https://www.codere.bet.ar/assets/splash-banners/women-day-desktop.jpg",
+      "img_alt": "women-day",
+      "tycLink": "",
+      "startDate": "2023-03-07T15:00:00Z",
+      "endDate": "2023-03-08T22:00:00Z",
       "scheduled": true
     },
     {
@@ -39,11 +39,11 @@
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/vill-vs-rm-mobile.jpg",
-      "img_alt": "vill-vs-rm",
-      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/WB%20ARG%20SPORT.aspx",
-      "startDate": "2023-01-05T12:00:00Z",
-      "endDate": "2023-01-07T15:15:00Z",
+      "image": "https://www.codere.bet.ar/assets/splash-banners/women-day-mobile.jpg",
+      "img_alt": "women-day",
+      "tycLink": "",
+      "startDate": "2023-03-07T15:00:00Z",
+      "endDate": "2023-03-08T22:00:00Z",
       "scheduled": true
     },
     {
