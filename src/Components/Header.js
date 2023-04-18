@@ -27,20 +27,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 
-class PostUser {
-  constructor(loginName, password) {
-    this.loginName = loginName;
-    this.password = password;
-    // this.persistCookie = persistCookie;
-    // this.deviceType = deviceType;
-  }
-}
-
 function Header(props) {
   const acceder =
     "https://m.caba.codere.bet.ar/deportes/#/HomePage?openlogin=true";
-
-  // const URL = "https://dm.apuestas.codere.es/LoginServicesESApi/login/web";
 
   const LOGO =
     new Date() >= new Date("2022-12-30T22:00:00Z")
@@ -70,11 +59,6 @@ function Header(props) {
       url: "https://m.caba.codere.bet.ar/deportes/#/CasinoPage",
     },
     {
-      icon: faCoins,
-      name: "Casino en vivo",
-      url: "https://m.caba.codere.bet.ar/deportes/#/CasinoPage?filter=En%20Vivo",
-    },
-    {
       icon: faBullhorn,
       name: "Promociones",
       url: "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
@@ -87,20 +71,25 @@ function Header(props) {
   ];
 
   const seo_menu = [
-    { name: "Casino", url: "/casino", icon: faCoins },
+    { name: "Casino", url: "https://www.codere.bet.ar/casino", icon: faCoins },
+    {
+      name: "Casino en vivo",
+      url: "https://www.codere.bet.ar/casino/casino-en-vivo",
+      icon: faCoins,
+    },
     {
       name: "Ruleta",
-      url: "/casino/ruleta-online",
+      url: "https://www.codere.bet.ar/casino/ruleta-online",
       icon: faStar,
     },
     {
       name: "Slots",
-      url: "/casino/tragamonedas-slots-online",
+      url: "https://www.codere.bet.ar/casino/tragamonedas-slots-online",
       icon: faFlag,
     },
     {
       name: "Blackjack",
-      url: "/casino/blackjack",
+      url: "https://www.codere.bet.ar/casino/blackjack",
       icon: faHeart,
     },
   ];
@@ -288,14 +277,13 @@ function Header(props) {
                     <FontAwesomeIcon icon={faAngleDown} />
                   </Dropdown.Toggle>
                   <Dropdown.Menu>
-                    <Link
-                      style={{ textDecoration: "none" }}
-                      to={"/casino/casino-en-vivo"}
-                    >
-                      <Dropdown.Item as={"p"}>Casino en vivo</Dropdown.Item>
-                    </Link>
                     {seo_menu.map((s, k) => (
-                      <Dropdown.Item key={k} href={s.url}>
+                      <Dropdown.Item
+                        as={s.isSPA ? Link : "a"}
+                        key={k}
+                        to={s.url}
+                        href={s.url}
+                      >
                         {s.name}
                       </Dropdown.Item>
                     ))}

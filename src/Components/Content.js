@@ -242,18 +242,18 @@ function Content(props) {
               </p>
               <p>
                 En nuestro{" "}
-                <a href="/casino">casino online</a>{" "}
+                <a href="https://www.codere.bet.ar/casino">casino online</a>{" "}
                 encontrarás todas las mesas y máquinas que te puedas imaginar:
-                <a href="/casino/blackjack">
+                <a href="https://www.codere.bet.ar/casino/blackjack">
                   {" "}
                   BlackJack
                 </a>
                 , Póker,{" "}
-                <a href="/casino/ruleta-online">
+                <a href="https://www.codere.bet.ar/casino/ruleta-online">
                   Ruleta
                 </a>
                 ,{" "}
-                <a href="/casino/tragamonedas-slots-online">
+                <a href="https://www.codere.bet.ar/casino/tragamonedas-slots-online">
                   tragamonedas
                 </a>
                 , Video Bingo y mucho más. Podés recorrer nuestras salas y

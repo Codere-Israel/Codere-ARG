@@ -101,7 +101,7 @@ function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a
-                      href="/ayuda/juego-responsable"
+                      href="https://www.codere.bet.ar/juego-responsable"
                       title=""
                       rel="nofollow"
                     >
@@ -119,7 +119,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="/ayuda/reglas"
+                      href="https://www.codere.bet.ar/informaci%C3%B3n-legal/reglas"
                       title=""
                       rel="nofollow"
                     >
@@ -128,7 +128,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="/ayuda/contrato-y-politica-de-privacidad"
+                      href="https://www.codere.bet.ar/informaci%C3%B3n-legal/politica-de-cookies"
                       title=""
                       target={"_blank"}
                       rel="nofollow"
@@ -138,7 +138,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="/ayuda/politica-de-cookies"
+                      href="https://www.codere.bet.ar/informaci%C3%B3n-legal/politica-de-cookies"
                       title=""
                       rel="nofollow"
                     >
@@ -155,7 +155,7 @@ function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a
-                      href="/ayuda/resultados-y-estadisticas"
+                      href="https://www.codere.bet.ar/resultados-y-estad%C3%ADsticas"
                       title=""
                       rel="nofollow"
                     >
@@ -163,20 +163,25 @@ function Footer() {
                     </a>
                   </li>
                   <li>
-                    <a href="/casino">Casino</a>
+                    <a href="https://www.codere.bet.ar/casino">Casino</a>
                   </li>
                   <li>
-                    <a href="/casino/blackjack">
+                    <a href="https://www.codere.bet.ar/casino/casino-en-vivo">
+                      Casino en vivo
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.codere.bet.ar/casino/blackjack">
                       Blackjack
                     </a>
                   </li>
                   <li>
-                    <a href="/casino/tragamonedas-slots-online">
+                    <a href="https://www.codere.bet.ar/casino/tragamonedas-slots-online">
                       Slots
                     </a>
                   </li>
                   <li>
-                    <a href="/casino/ruleta-online">
+                    <a href="https://www.codere.bet.ar/casino/ruleta-online">
                       Ruleta
                     </a>
                   </li>
@@ -190,7 +195,7 @@ function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a
-                      href="/ayuda/deposito-online"
+                      href="https://www.codere.bet.ar/dep%C3%B3sitos/dep%C3%B3sito-online"
                       title=""
                     >
                       Info Depósitos y Cobros
@@ -198,7 +203,7 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="/ayuda/como-y-donde-apostar"
+                      href="https://www.codere.bet.ar/apuestas/c%C3%B3mo-y-d%C3%B3nde-apostar"
                       title=""
                     >
                       Cómo Apostar
@@ -213,7 +218,7 @@ function Footer() {
                 <span className="title">AYUDA</span>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="/ayuda" title="">
+                    <a href="https://www.codere.bet.ar/ayuda" title="">
                       Términos y Condiciones
                     </a>
                   </li>
