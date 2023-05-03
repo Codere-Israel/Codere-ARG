@@ -110,11 +110,22 @@ function Footer() {
                   </li>
                   <li>
                     <a
-                      href="https://m.caba.codere.bet.ar/csbgonline/condicionesgenerales/condicionespoliticaargentina.pdf?_ga=1.6998646.512593250.1464854868"
+                      href="https://m.caba.codere.bet.ar/csbgonline/condicionesgenerales/contratoArgentinaCaba.pdf?m=si"
                       title=""
                       rel="nofollow"
                     >
-                      Contrato y política de privacidad
+                      Contrato
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://m.caba.codere.bet.ar/csbgonline/condicionesgenerales/politicaprivacidadargentinacaba.pdf"
+                      title=""
+                      target={"_blank"}
+                      rel="nofollow"
+                    >
+                      Política de Privacidad
                     </a>
                   </li>
                   <li>
@@ -124,16 +135,6 @@ function Footer() {
                       rel="nofollow"
                     >
                       Reglas
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.codere.bet.ar/informaci%C3%B3n-legal/politica-de-cookies"
-                      title=""
-                      target={"_blank"}
-                      rel="nofollow"
-                    >
-                      Política de Privacidad
                     </a>
                   </li>
                   <li>
