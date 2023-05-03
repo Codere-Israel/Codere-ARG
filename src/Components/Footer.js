@@ -299,9 +299,7 @@ function Footer() {
         <div id="legals" style={{ marginBottom: "2vw" }}>
           EL JUEGO COMPULSIVO ES PERJUDICIAL PARA VOS Y TU FAMILIA
           <br />
-          codere.bet.ar es un sitio operado por Iberargen S.A. bajo permiso
-          otorgado por LOTBA S.E. mediante DI-2021-238-GCABA-LOTBA. El ámbito de
-          aplicación se circunscribe a la Ciudad Autónoma de Buenos Aires.
+          codere.bet.ar es un sitio operado por  Codere Online Argentina S.A. bajo permiso otorgado por LOTBA S.E. mediante DI-2021-238-GCABA-LOTBA y DI-2023-359-GCABA-LOTBA. El ámbito de aplicación se circunscribe a la Ciudad Autónoma de Buenos Aires.
         </div>
       </footer>
     </div>
