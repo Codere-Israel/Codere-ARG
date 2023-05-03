@@ -283,7 +283,7 @@ function Content(props) {
           </tr>
           <tr>
             <td>🎲 Licencia</td>
-            <td>LOTBA S.E. mediante DI-2021-238-GCABA-LOTBA.</td>
+            <td>LOTBA S.E. mediante DI-2021-238-GCABA-LOTBA y DI-2023-359-GCABA-LOTBA.</td>
           </tr>
           <tr>
             <td>✔️ Moneda</td>
