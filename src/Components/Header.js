@@ -47,26 +47,31 @@ function Header(props) {
       icon: faCrosshairs,
       name: "Deportes",
       url: "https://m.caba.codere.bet.ar/deportes/#/HomePage",
+      target: "_self"
     },
     {
       icon: faCirclePlay,
       name: "Directo",
       url: "https://m.caba.codere.bet.ar/deportes/#/DirectosPage",
+      target: "_self"
     },
     {
       icon: faCoins,
       name: "Casino",
       url: "https://m.caba.codere.bet.ar/deportes/#/CasinoPage",
+      target: "_self"
     },
     {
       icon: faBullhorn,
       name: "Promociones",
       url: "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
+      target: "_self"
     },
     {
       icon: faGlobe,
       name: "Nuestras Salas",
       url: "https://bingos.codere.bet.ar",
+      target: "_blank"
     },
   ];
 
@@ -197,7 +202,7 @@ function Header(props) {
                     outerContainerId={"outer-container"}
                   >
                     {menu.map((m, k) => (
-                      <NavLink key={k} to={m.url} rel="nofollow">
+                      <NavLink key={k} to={m.url} target={m.target} rel="nofollow">
                         <FontAwesomeIcon icon={m.icon} />
                         {m.name}
                         <FontAwesomeIcon icon={faAngleRight} />
@@ -265,7 +270,7 @@ function Header(props) {
 
                 <Nav className="me-auto">
                   {menu.map((m, k) => (
-                    <Nav.Link key={k} href={m.url} rel="nofollow">
+                    <Nav.Link key={k} href={m.url} target={m.target} rel="nofollow">
                       <span style={{ textTransform: "uppercase" }}>
                         {m.name}
                       </span>
