@@ -216,11 +216,11 @@ function Header(props) {
                           <ul>
                             {seo_menu.map((s, k) => (
                               <li key={k}>
-                                <NavLink to={s.url}>
+                                <a href={s.url}>
                                   <FontAwesomeIcon icon={s.icon} />
                                   {s.name}
                                   <FontAwesomeIcon icon={faAngleRight} />
-                                </NavLink>
+                                </a>
                               </li>
                             ))}
                           </ul>
