@@ -50,7 +50,7 @@ function Footer() {
         <div className="about">
           <div className="social-media">
             <p style={{ color: "#79c000" }}>
-              ¡SEGUINOS EN NUESTRAS REDES SOCAILES!
+              ¡SEGUINOS EN NUESTRAS REDES SOCIALES!
             </p>
             <ul className="list-inline">
               <li>
