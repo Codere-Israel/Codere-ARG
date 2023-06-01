@@ -3,6 +3,7 @@
     {
       "image": "https://www.codere.bet.ar/assets/splash-banners/argentina-panama-desktop.jpg",
       "img_alt": "argentina-panama",
+      "ctaURL":"https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
       "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/WB%20ARG%20SPORT.aspx",
       "startDate": "2023-03-21T12:00:00Z",
       "endDate": "2023-03-24T01:00:00Z",
@@ -11,23 +12,29 @@
     {
       "image": "https://www.codere.bet.ar/assets/splash-banners/rp-offer-desktop.jpg",
       "img_alt": "river-plate",
+      "ctaURL":"https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
       "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/WB%20ARG%20SPORT.aspx",
       "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/banner8.jpg",
       "img_alt": "Casino",
+      "ctaURL":"https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
       "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/banner2.jpg",
       "img_alt": "Online Codere",
+      "ctaURL":"https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
       "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/payment-banner-desktop.jpg",
       "img_alt": "Methodos",
-      "scheduled": false
+      "ctaURL":"https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
+      "startDate": "2023-03-21T12:00:00Z",
+      "endDate": "2023-03-24T01:00:00Z",
+      "scheduled": true
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/diver_desktop.jpg",
@@ -41,6 +48,7 @@
     {
       "image": "https://www.codere.bet.ar/assets/splash-banners/argentina-panama-mobile.jpg",
       "img_alt": "argentina-panama",
+      "ctaURL":"https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
       "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/WB%20ARG%20SPORT.aspx",
       "startDate": "2023-03-21T12:00:00Z",
       "endDate": "2023-03-24T01:00:00Z",
@@ -49,17 +57,20 @@
     {
       "image": "https://www.codere.bet.ar/assets/splash-banners/rp-offer-mobile.jpg",
       "img_alt": "river-plate",
+      "ctaURL":"https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
       "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/WB%20ARG%20SPORT.aspx",
       "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/bannerMobile8.jpg",
       "img_alt": "Casino",
+      "ctaURL":"https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
       "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/bannerMobile2.jpg",
       "img_alt": "Online Codere",
+      "ctaURL":"https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
       "tycLink": "",
       "scheduled": false
     },
@@ -67,7 +78,9 @@
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/payment-banner-mobile.jpg",
       "img_alt": "Métodos de Pago",
       "tycLink": "",
-      "scheduled": false
+      "startDate": "2023-03-21T12:00:00Z",
+      "endDate": "2023-03-24T01:00:00Z",
+      "scheduled": true
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/bannerMobile6.jpg",
