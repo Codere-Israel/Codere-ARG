@@ -32,9 +32,7 @@
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/payment-banner-desktop.jpg",
       "img_alt": "Methodos",
       "ctaURL":"https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
-      "startDate": "2023-03-21T12:00:00Z",
-      "endDate": "2023-03-24T01:00:00Z",
-      "scheduled": true
+      "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/diver_desktop.jpg",
@@ -78,9 +76,7 @@
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/payment-banner-mobile.jpg",
       "img_alt": "Métodos de Pago",
       "tycLink": "",
-      "startDate": "2023-03-21T12:00:00Z",
-      "endDate": "2023-03-24T01:00:00Z",
-      "scheduled": true
+      "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/bannerMobile6.jpg",
