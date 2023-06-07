@@ -1,12 +1,12 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/argentina-panama-desktop.jpg",
-      "img_alt": "argentina-panama",
+      "image": "https://www.codere.bet.ar/assets/splash-banners/manchester-city-inter-desktop.jpg",
+      "img_alt": "manchester-city-inter",
       "ctaURL":"https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
       "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/WB%20ARG%20SPORT.aspx",
-      "startDate": "2023-03-21T12:00:00Z",
-      "endDate": "2023-03-24T01:00:00Z",
+      "startDate": "2023-06-08T12:00:00Z",
+      "endDate": "2023-06-10T20:00:00Z",
       "scheduled": true
     },
     {
@@ -44,12 +44,12 @@
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/argentina-panama-mobile.jpg",
-      "img_alt": "argentina-panama",
+      "image": "https://www.codere.bet.ar/assets/splash-banners/manchester-city-inter-mobile.jpg",
+      "img_alt": "manchester-city-inter",
       "ctaURL":"https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
       "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/WB%20ARG%20SPORT.aspx",
-      "startDate": "2023-03-21T12:00:00Z",
-      "endDate": "2023-03-24T01:00:00Z",
+      "startDate": "2023-06-08T12:00:00Z",
+      "endDate": "2023-06-10T20:00:00Z",
       "scheduled": true
     },
     {
