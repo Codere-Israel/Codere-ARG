@@ -60,7 +60,7 @@ function App() {
       <isMobileContext.Provider value={flag}>
         <Header regis={regis} flag={flag} />
         {
-         <CookieConsent
+          <CookieConsent
             cookieName="codere_cookie"
             expires={365}
             buttonText="- Aceptar -"
@@ -82,32 +82,10 @@ function App() {
               política de cookies
             </a>
             .
-          </CookieConsent> 
-          }
+          </CookieConsent>
+        }
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route exact path="casino/casino-en-vivo">
-            <Route
-              exact
-              path=""
-              element={<CasinoEnVivo flag={flag} index={0} />}
-            />
-            {/* <Route
-              exact
-              path="apuestas-mundial-baloncesto"
-              element={<Basketball flag={flag} index={1} />}
-            />
-            <Route
-              exact
-              path="apuestas-grand-slam"
-              element={<Tenis flag={flag} index={2} />}
-            />
-            <Route
-              exact
-              path="apuestas-grand-prix"
-              element={<Formula flag={flag} index={3} />}
-            /> */}
-          </Route>
         </Routes>
         <Outlet />
       </isMobileContext.Provider>
