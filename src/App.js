@@ -10,14 +10,15 @@ import { isMobile } from "react-device-detect";
 import React, { useState, useEffect, useMemo } from "react";
 import CookieConsent from "react-cookie-consent";
 import Inicio from "./Components/Inicio";
-import CasinoEnVivo from "./Components/Casino/CasinoEnVivo";
+import CasinoEnVivo from "./Components/seo/casino/CasinoLive";
+import Routing from "./routes/Routing";
 
 // import Axios from "axios";
 
+export const regis = "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage";
 export const isMobileContext = React.createContext();
 function App() {
   // require("dotenv").config();
-  const regis = "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage";
   const [flag, setFlag] = useState(isMobile);
   const [windowSize, setWindowSize] = useState({
     width: undefined,
@@ -84,9 +85,7 @@ function App() {
             .
           </CookieConsent>
         }
-        <Routes>
-          <Route path="/" element={<Inicio />} />
-        </Routes>
+        <Routing flag={flag} />
         <Outlet />
       </isMobileContext.Provider>
       {flag ? <StickyFooter /> : null}
