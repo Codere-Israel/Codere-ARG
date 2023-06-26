@@ -113,6 +113,10 @@ body {
   padding-bottom: 0.5rem;
 }
 
+.nav-link {
+  padding: initial;
+}
+
 .header_nav img {
   position: relative;
   /* height: 3vw; */
