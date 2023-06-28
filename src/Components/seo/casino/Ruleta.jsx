@@ -97,7 +97,7 @@ export default function Ruleta(props) {
   };
 
   const top_par = {
-    h1: "Jugá la increíble Ruleta de Casino Online",
+    h1: "Jugá a la Ruleta Online con Crupieres Reales",
   };
 
   // Table of Contents  \\
