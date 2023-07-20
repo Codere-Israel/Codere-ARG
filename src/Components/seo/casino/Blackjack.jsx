@@ -189,17 +189,6 @@ export default function Blackjack(props) {
         "El número de máquinas de slot que un casino tradicional puede tener se ve limitado por el espacio físico que un piso tiene. Casinos online a menudo contienen cientos de diferentes temas de slot a elegir, y ya que no hay limitaciones físicas, los usuarios no tienen que esperar para jugar su juego favorito.",
       ],
     },
-
-    inner: [
-      {
-        h3: "Slot Online Vs. las Maquinas de Slot: Diferencias y Similitudes",
-        p: [
-          "Aunque las reglas básicas del juego se mantienen iguales en ambas, online y slots en vivo, existen grandes diferencias importantes.",
-          "Pese a que el clásico slot Las Vegas contiene solo tres columnas y tres filas, los slots online típicamente contienen por lo menos cinco columnas, aunque este número puede ser incluso mayor dependiendo del juego específico. Desde que los slots online tienen más columnas, estas también contienen más líneas de pago, lo que significa que hay más chances de ganar con cada giro.",
-          "Adicional a las columnas de más, las máquinas slot online también contienen muchos más temas interactivos. Juegos de slots de casino online combina la emoción de las máquinas de slot, con gráficos 3D y las historias inmersivas de los video juegos.",
-        ],
-      },
-    ],
   };
 
   const secretos = {
@@ -371,14 +360,6 @@ export default function Blackjack(props) {
           </ol>
           {reglas.p.pi.map((p, k) => (
             <p key={k}>{p}</p>
-          ))}
-          {reglas.inner.map((game, k) => (
-            <div key={k}>
-              <h3>{game.h3}</h3>
-              {game.p.map((pi, k) => (
-                <p key={k}>{pi}</p>
-              ))}
-            </div>
           ))}
         </div>
         <div id={secretos.id}>
