@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
   faInstagram,
-  faTwitter,
+  faXTwitter,
   faYoutube,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
@@ -77,7 +77,7 @@ function Footer() {
                   title=""
                   rel="nofollow"
                 >
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FontAwesomeIcon icon={faXTwitter} />
                 </a>
               </li>
               <li>
@@ -151,7 +151,7 @@ function Footer() {
                       href="https://www.codere-partners.com/es/"
                       title=""
                       rel="nofollow"
-                      target='_blank'
+                      target="_blank"
                     >
                       Afiliados de Codere
                     </a>
@@ -310,7 +310,10 @@ function Footer() {
         <div id="legals" style={{ marginBottom: "2vw" }}>
           EL JUEGO COMPULSIVO ES PERJUDICIAL PARA VOS Y TU FAMILIA
           <br />
-          codere.bet.ar es un sitio operado por  Codere Online Argentina S.A. bajo permiso otorgado por LOTBA S.E. mediante DI-2021-238-GCABA-LOTBA y DI-2023-359-GCABA-LOTBA. El ámbito de aplicación se circunscribe a la Ciudad Autónoma de Buenos Aires.
+          codere.bet.ar es un sitio operado por Codere Online Argentina S.A.
+          bajo permiso otorgado por LOTBA S.E. mediante DI-2021-238-GCABA-LOTBA
+          y DI-2023-359-GCABA-LOTBA. El ámbito de aplicación se circunscribe a
+          la Ciudad Autónoma de Buenos Aires.
         </div>
       </footer>
     </div>
