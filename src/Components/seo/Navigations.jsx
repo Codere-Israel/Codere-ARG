@@ -89,6 +89,8 @@ export default function Navigations(props) {
           <span className={props.index === k + 1 ? "colored" : ""}>
             {n.title}
           </span>
+
+
         </Link>
       ))}
     </div>

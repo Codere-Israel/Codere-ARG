@@ -29,6 +29,7 @@ import {
 import { Link, NavLink } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
+
 function Header(props) {
   const acceder =
     "https://m.caba.codere.bet.ar/deportes/#/HomePage?openlogin=true";
@@ -65,6 +66,7 @@ function Header(props) {
       target: "_self",
     },
     {
+
       icon: faHeart,
       name: "En Vivo",
       url: "https://m.caba.codere.bet.ar/deportes/#/CasinoenVivoPage",
@@ -72,6 +74,7 @@ function Header(props) {
     },
 
     {
+
       icon: faBullhorn,
       name: "Promociones",
       url: "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",

@@ -1,21 +1,10 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
+import userSlice from "./slice";
+import mobileSlice from "./mobile";
 
-export const slice = createSlice({
-  name: "user",
-  initialState: {
-    user: null,
-  },
-  reducers: {
-    login: (state, action) => {
-      state.user = action.payload;
-    },
-    logout: (state) => {
-      state.user = null;
-    },
+export default configureStore({
+  reducer: {
+    user: userSlice,
+    isMobile2: mobileSlice,
   },
 });
-
-export const { login, logout } = slice.actions;
-export const selectUser = (state) => state.user.user;
-
-export default slice.reducer;

@@ -139,3 +139,4 @@ export default class SlideButton extends Component {
     );
   }
 }
+
