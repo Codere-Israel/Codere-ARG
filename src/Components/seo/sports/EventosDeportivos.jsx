@@ -26,10 +26,6 @@ export default function EventosDeportivos(props) {
   const description =
     "Encuentra aquí las guías para apostar en línea a tus eventos deportivos favoritos al rededor del mundo. Juega con Codere.";
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
   const data = {
     top_games: [
       {
