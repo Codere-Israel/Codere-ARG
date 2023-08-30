@@ -36,7 +36,7 @@ function Header(props) {
 
   const LOGO =
     new Date() >= new Date("2022-12-30T22:00:00Z")
-      ? "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/Splash/RealMadrid-NoText-CO-PA-HEADER.svg"
+      ? "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/Splash/riverPlateTopLogo.svg"
       : "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/christmassLogo.gif";
 
   // Hooks
