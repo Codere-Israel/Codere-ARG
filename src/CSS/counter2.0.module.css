@@ -1,4 +1,3 @@
-
 :root {
   --codere_green: #79c000;
   --grey: #333f48cc;
@@ -101,16 +100,27 @@
   background: var(--codere_green);
   height: 5px;
   width: 5px;
-  box-shadow: 1vw 0px 0px var(--codere_green), 2vw 0px 0px var(--codere_green),
-    3vw 0px 0px var(--codere_green), 4vw 0px 0px var(--codere_green),
-    5vw 0px 0px var(--codere_green), 5vw 0px 0px var(--codere_green),
-    6vw 0px 0px var(--codere_green), 7vw 0px 0px var(--codere_green),
-    8vw 0px 0px var(--codere_green), 9vw 0px 0px var(--codere_green),
-    10vw 0px 0px var(--codere_green), 11vw 0px 0px var(--codere_green),
-    12vw 0px 0px var(--codere_green), 13vw 0px 0px var(--codere_green),
-    14vw 0px 0px var(--codere_green), 15vw 0px 0px var(--codere_green),
-    16vw 0px 0px var(--codere_green), 17vw 0px 0px var(--codere_green),
-    18vw 0px 0px var(--codere_green), 19vw 0px 0px var(--codere_green);
+  box-shadow:
+    1vw 0px 0px var(--codere_green),
+    2vw 0px 0px var(--codere_green),
+    3vw 0px 0px var(--codere_green),
+    4vw 0px 0px var(--codere_green),
+    5vw 0px 0px var(--codere_green),
+    5vw 0px 0px var(--codere_green),
+    6vw 0px 0px var(--codere_green),
+    7vw 0px 0px var(--codere_green),
+    8vw 0px 0px var(--codere_green),
+    9vw 0px 0px var(--codere_green),
+    10vw 0px 0px var(--codere_green),
+    11vw 0px 0px var(--codere_green),
+    12vw 0px 0px var(--codere_green),
+    13vw 0px 0px var(--codere_green),
+    14vw 0px 0px var(--codere_green),
+    15vw 0px 0px var(--codere_green),
+    16vw 0px 0px var(--codere_green),
+    17vw 0px 0px var(--codere_green),
+    18vw 0px 0px var(--codere_green),
+    19vw 0px 0px var(--codere_green);
 }
 
 /* 
@@ -257,15 +267,25 @@
     left: 9vw;
     height: 4px;
     width: 4px;
-    box-shadow: 0 0px 0px var(--codere_green), 3vw 0px 0px var(--codere_green),
-      6vw 0px 0px var(--codere_green), 9vw 0px 0px var(--codere_green),
-      12vw 0px 0px var(--codere_green), 15vw 0px 0px var(--codere_green),
-      18vw 0px 0px var(--codere_green), 21vw 0px 0px var(--codere_green),
-      24vw 0px 0px var(--codere_green), 27vw 0px 0px var(--codere_green),
-      30vw 0px 0px var(--codere_green), 33vw 0px 0px var(--codere_green),
-      36vw 0px 0px var(--codere_green), 39vw 0px 0px var(--codere_green),
-      42vw 0px 0px var(--codere_green), 45vw 0px 0px var(--codere_green),
-      48vw 0px 0px var(--codere_green), 51vw 0px 0px var(--codere_green),
+    box-shadow:
+      0 0px 0px var(--codere_green),
+      3vw 0px 0px var(--codere_green),
+      6vw 0px 0px var(--codere_green),
+      9vw 0px 0px var(--codere_green),
+      12vw 0px 0px var(--codere_green),
+      15vw 0px 0px var(--codere_green),
+      18vw 0px 0px var(--codere_green),
+      21vw 0px 0px var(--codere_green),
+      24vw 0px 0px var(--codere_green),
+      27vw 0px 0px var(--codere_green),
+      30vw 0px 0px var(--codere_green),
+      33vw 0px 0px var(--codere_green),
+      36vw 0px 0px var(--codere_green),
+      39vw 0px 0px var(--codere_green),
+      42vw 0px 0px var(--codere_green),
+      45vw 0px 0px var(--codere_green),
+      48vw 0px 0px var(--codere_green),
+      51vw 0px 0px var(--codere_green),
       54vw 0px 0px var(--codere_green);
   }
 

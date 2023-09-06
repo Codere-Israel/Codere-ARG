@@ -113,6 +113,7 @@ function Footer() {
                       href="https://m.caba.codere.bet.ar/csbgonline/condicionesgenerales/contratoArgentinaCaba.pdf?m=si"
                       title=""
                       rel="nofollow"
+                      target="_blank"
                     >
                       Contrato
                     </a>
@@ -122,7 +123,7 @@ function Footer() {
                     <a
                       href="https://m.caba.codere.bet.ar/csbgonline/condicionesgenerales/politicaprivacidadargentinacaba.pdf"
                       title=""
-                      target={"_blank"}
+                      target="_blank"
                       rel="nofollow"
                     >
                       Política de Privacidad
@@ -169,6 +170,7 @@ function Footer() {
                       href="https://www.codere.bet.ar/resultados-y-estad%C3%ADsticas"
                       title=""
                       rel="nofollow"
+                      target="_blank"
                     >
                       Resultados y Estadísticas
                     </a>
@@ -206,8 +208,18 @@ function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <a
+                      href="https://blog.codere.bet.ar/"
+                      title=""
+                      target="_blank"
+                    >
+                      Blog Codere
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="https://www.codere.bet.ar/dep%C3%B3sitos/dep%C3%B3sito-online"
                       title=""
+                      rel="nofollow"
                     >
                       Info Depósitos y Cobros
                     </a>
@@ -216,8 +228,18 @@ function Footer() {
                     <a
                       href="https://www.codere.bet.ar/apuestas/c%C3%B3mo-y-d%C3%B3nde-apostar"
                       title=""
+                      rel="nofollow"
                     >
                       Cómo Apostar
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://m.caba.codere.bet.ar/deportes/#/HomePage"
+                      title=""
+                      rel="nofollow"
+                    >
+                      Apuestas en Vivo
                     </a>
                   </li>
                 </ul>
@@ -229,13 +251,21 @@ function Footer() {
                 <span className="title">AYUDA</span>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="https://www.codere.bet.ar/ayuda" title="">
+                    <a
+                      href="https://www.codere.bet.ar/ayuda"
+                      title=""
+                      rel="nofollow"
+                    >
                       Términos y Condiciones
                     </a>
                   </li>
 
                   <li>
-                    <a href="mailto:apuestas@codere.com" title="">
+                    <a
+                      href="mailto:apuestas@codere.com"
+                      title=""
+                      rel="nofollow"
+                    >
                       Contacto: apuestas@codere.com
                     </a>
                   </li>
