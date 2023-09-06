@@ -63,11 +63,6 @@ span.colored {
   padding-left: 0;
 }
 
-#eventos ul li,
-.event ul li {
-  /* list-style-type: none; */
-}
-
 #eventos p,
 .event p {
   color: #fff;
