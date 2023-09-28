@@ -69,7 +69,7 @@ export default function Casino(props) {
   };
 
   const top_par = {
-    h1: "​Casino Online en CABA con la mejor selección de juegos",
+    h1: "Casino Online en Argentina con la mejor selección de juegos",
     p: [
       "¡Juega en el casino online con las mejores condiciones y pasa horas de diversión en Codere! Elegí entre la enorme lista de juegos de casino y slots que tendrás al alcance de tu mano, descubrí las últimas novedades del mercado y disfrutá jugando con total seguridad.",
       "Aceptá el desafío, registrate ahora, disfrutá de todas las ventajas que tiene jugar en Codere y empezá a ganar a lo grande.",
