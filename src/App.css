@@ -22,6 +22,15 @@ body {
   width: 0;
 }
 
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(
+    0deg,
+    rgba(101, 192, 0, 1) 50%,
+    rgba(117, 189, 1, 1) 50%
+  );
+}
+
 /* Cookie Consent */
 .cookie-content h3,
 .cookie-content a {
@@ -124,10 +133,10 @@ body {
 }
 
 .navbar {
+  height: 4rem;
   position: fixed;
   width: 100%;
-  z-index: 9;
-  height: 4rem;
+  z-index: 6;
 }
 
 .nav-link {
@@ -283,6 +292,7 @@ body {
   font-weight: bold;
   display: block;
   height: 100%;
+  color: #fff !important;
   background: linear-gradient(180deg, #0587f5, #0263b5);
 }
 
@@ -329,6 +339,7 @@ body {
 
 .tyc {
   color: #fff;
+  cursor: pointer;
 }
 .tyc:visited {
   color: #fff;
@@ -432,10 +443,99 @@ body {
   border-radius: 30px;
 }
 
-.btn-close:hover {
+.terms-tyc {
+  background-color: rgb(255, 255, 255);
+  color: #000;
+  overflow-x: hidden;
+  max-width: 450px;
+}
+
+.modal-body {
+  overflow-x: hidden;
+}
+
+.terms-tyc .modal-body table {
+  overflow-x: auto !important;
+}
+
+.terms-tyc .btn-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.terms-tyc .modal-title {
+  margin: auto;
+}
+
+.terms-tyc .modal-title img {
+  width: 75px;
+}
+
+.terms-tyc .modal-header,
+.terms-tyc .modal-footer {
+  border: unset;
+}
+
+.terms-tyc .test {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+}
+
+.terms-tyc ::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.terms-tyc ol {
+  font-size: 0.75rem;
+  counter-reset: my-counter;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.terms-tyc ol > li {
+  counter-increment: my-counter;
+  padding-left: 25px;
+  position: relative;
+}
+.terms-tyc ol > li::before {
+  content: counter(my-counter) ". ";
+  color: #000;
+  position: absolute;
+  left: 0;
+}
+
+.modal-header .btn-close {
+  padding: 0;
+  margin: 0;
+}
+
+.table > :not(caption) > * > * {
+  margin-left: 1rem;
+}
+
+.terms-tyc .modal-body {
+  padding: 0.25rem 1rem;
+}
+
+.terms-tyc .accept-btn {
+  background-color: #79c000;
+  border: #79c000;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+/* .btn-close:hover {
   transform: rotate(360deg);
   transition: transform 600ms ease-out;
-}
+} */
 
 .modal-header .btn-close {
   padding: 0;
@@ -448,8 +548,8 @@ body {
 
 #carousel-section {
   position: relative;
-  top: 3.2vw;
-  margin-bottom: 2.2vw;
+  top: 4rem;
+  /* margin-bottom: 2.2vw; */
 }
 
 /* Swiper */
@@ -460,7 +560,7 @@ body {
 
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 4vw !important;
+  bottom: 7.5vw !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -1139,7 +1239,7 @@ footer.nb-footer .footer-info-single p {
   }
 
   .modal-dialog {
-    top: 23vw;
+    /* top: 23vw; */
     margin: auto;
     width: 84%;
   }
@@ -1234,11 +1334,11 @@ footer.nb-footer .footer-info-single p {
   }
 
   .bm-burger-button {
-    position: absolute;
-    width: 28px;
     height: 20px;
     left: 3vw;
-    top: 5vw;
+    position: absolute;
+    top: 1.5rem;
+    width: 28px;
   }
 
   .bm-menu-wrap,
@@ -1383,13 +1483,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   #carousel-section {
     top: 14vw;
-    margin-bottom: 14vw;
+    /* min-height: 40vh; */
+    /* margin-bottom: 14vw; */
   }
 
-  .swiper-horizontal > .swiper-pagination-bullets,
+  /* .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 0 !important;
-  }
+  } */
 
   /* Games */
 

@@ -13,7 +13,6 @@ import { Helmet } from "react-helmet";
 import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { backTopTop } from "../EventosDeportivos";
 
 export default function Balenco(props) {
   useEffect(() => {
@@ -384,8 +383,6 @@ export default function Balenco(props) {
           </Container>
         </div>
       </Container>
-
-      {backTopTop()}
     </>
   );
 }

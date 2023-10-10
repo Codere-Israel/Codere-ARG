@@ -1,6 +1,7 @@
 import { Zoom } from "react-awesome-reveal";
 import { Table, Accordion } from "react-bootstrap";
 import React from "react";
+import { Link } from "react-router-dom";
 
 var questions = [
   "¿Cómo puedo registrarme para realizar apuestas deportivas?",
@@ -241,24 +242,14 @@ function Content(props) {
                 computadora o dispositivo móvil.
               </p>
               <p>
-                En nuestro{" "}
-                <a href="https://www.codere.bet.ar/casino">casino online</a>{" "}
-                encontrarás todas las mesas y máquinas que te puedas imaginar:
-                <a href="https://www.codere.bet.ar/casino/blackjack">
-                  {" "}
-                  BlackJack
-                </a>
-                , Póker,{" "}
-                <a href="https://www.codere.bet.ar/casino/ruleta-online">
-                  Ruleta
-                </a>
-                ,{" "}
-                <a href="https://www.codere.bet.ar/casino/tragamonedas-slots-online">
-                  tragamonedas
-                </a>
-                , Video Bingo y mucho más. Podés recorrer nuestras salas y
-                elegir el juego que más te divierta, siempre con toda la
-                tranquilidad y seguridad que solo Codere puede brindarte.
+                En nuestro <Link to="/casino">casino online</Link> encontrarás
+                todas las mesas y máquinas que te puedas imaginar:
+                <Link to="/casino/blackjack"> BlackJack</Link>, Póker,{" "}
+                <Link to="/casino/ruleta">Ruleta</Link>,{" "}
+                <Link to="/casino/slots">tragamonedas</Link>, Video Bingo y
+                mucho más. Podés recorrer nuestras salas y elegir el juego que
+                más te divierta, siempre con toda la tranquilidad y seguridad
+                que solo Codere puede brindarte.
               </p>
               <p>
                 Ningún otro casino online en Argentina te ofrecerá tanto.
@@ -283,7 +274,10 @@ function Content(props) {
           </tr>
           <tr>
             <td>🎲 Licencia</td>
-            <td>LOTBA S.E. mediante DI-2021-238-GCABA-LOTBA y DI-2023-359-GCABA-LOTBA.</td>
+            <td>
+              LOTBA S.E. mediante DI-2021-238-GCABA-LOTBA y
+              DI-2023-359-GCABA-LOTBA.
+            </td>
           </tr>
           <tr>
             <td>✔️ Moneda</td>

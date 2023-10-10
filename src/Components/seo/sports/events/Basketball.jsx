@@ -11,7 +11,6 @@ import {
 } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { backTopTop } from "../EventosDeportivos";
 import { useEffect } from "react";
 
 export default function Balenco(props) {
@@ -247,8 +246,6 @@ export default function Balenco(props) {
           </Container>
         </div>
       </Container>
-
-      {backTopTop()}
     </>
   );
 }

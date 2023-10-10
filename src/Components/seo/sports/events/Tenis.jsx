@@ -6,7 +6,6 @@ import { Container, Accordion, Image, Placeholder } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { Fade } from "react-awesome-reveal";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { backTopTop } from "../EventosDeportivos";
 import { useEffect, useState } from "react";
 
 export default function Tenis(props) {
@@ -261,8 +260,6 @@ export default function Tenis(props) {
           </Container>
         </div>
       </Container>
-
-      {backTopTop()}
     </>
   );
 }

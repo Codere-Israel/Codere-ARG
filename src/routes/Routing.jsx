@@ -19,6 +19,7 @@ export default function Routing(props) {
 
   useEffect(() => {
     setActivated(activeHandler);
+    window.scrollTo(0, 0);
   }, [location.pathname]);
 
   const activeHandler = () => {
@@ -55,9 +56,9 @@ export default function Routing(props) {
       <TransitionGroup>
         <CSSTransition key={location.key} classNames="fade" timeout={500}>
           <Routes location={location}>
-            <Route path="/" element={<Inicio />} />
-            <Route path="/stg/index.aspx" element={<Inicio />} />
-            <Route path="/stg/index.html" element={<Inicio />} />
+            <Route path="/" element={<Inicio flag={props.flag} />} />
+            {/* <Route path="/stg/index.aspx" element={<Inicio />} />
+            <Route path="/stg/index.html" element={<Inicio />} /> */}
 
             <Route exact path="eventos-deportivos">
               <Route

@@ -6,17 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import Navigations from "../Navigations";
 import Floating from "../Floating";
 import { useEffect } from "react";
-
-export const backTopTop = () => {
-  return (
-    <div className="scroll">
-      <ScrollToTop smooth component={<FontAwesomeIcon icon={faChevronUp} />} />
-    </div>
-  );
-};
 
 export default function EventosDeportivos(props) {
   const directions = ["left", "down", "right", "left"];
@@ -89,8 +80,6 @@ export default function EventosDeportivos(props) {
         <meta name="description" content={description} />
       </Helmet>
       <div id="eventos">
-        <div className="scroll">{backTopTop()}</div>
-        {/* <Navigations type={0} /> */}
         <Floating text="Deportes En Vivo" />
         <div
           className="top-bg-seo"
