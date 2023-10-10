@@ -3,7 +3,7 @@ import Content from "./Content";
 import Games from "./Games";
 import MySwiper from "./MySwiper";
 
-export default function Inicio() {
+export default function Inicio(props) {
   const json = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -102,7 +102,7 @@ export default function Inicio() {
         <script type="application/ld+json">{JSON.stringify(json)}</script>
         <script type="application/ld+json">{JSON.stringify(json2)}</script>
       </Helmet>
-      <MySwiper />
+      <MySwiper flag={props.flag} />
       <Games />
       <Content />
     </>

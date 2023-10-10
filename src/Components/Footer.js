@@ -15,17 +15,17 @@ function Footer() {
       <footer className="nb-footer">
         <div className="sponsor">
           <img
-            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/RealMadrid.svg"
+            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/Sponsorship-RM.svg"
             alt="Codere-RealMadrid"
           />
 
-          <img className="mx-4"
-            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/Rayados.svg"
+          <img
+            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/Sponsorship-Rayados.svg"
             alt="Codere-Rayados"
           />
 
           <img
-            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/River.svg"
+            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/footerlogocodereriver.svg"
             alt="Codere-RiverPlate"
           />
         </div>

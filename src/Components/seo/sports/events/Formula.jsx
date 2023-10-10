@@ -1,7 +1,6 @@
 import { Container, Accordion, Image, Placeholder } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { backTopTop } from "../EventosDeportivos";
 import "./events.css";
 import Navigations from "../../Navigations";
 import { useEffect, useState } from "react";
@@ -216,8 +215,6 @@ export default function Formula(props) {
           </Container>
         </div>
       </Container>
-
-      {backTopTop()}
     </>
   );
 }
