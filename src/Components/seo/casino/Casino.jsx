@@ -184,8 +184,8 @@ export default function Casino(props) {
     id: "ver",
     h2: "Ver contenido relacionado:",
     links: [
-      { name: "BlackJack", url: "/casino/blackJack" },
-      { name: "Ruleta Online", url: "/casino/ruelta" },
+      { name: "BlackJack", url: "/casino/blackjack" },
+      { name: "Ruleta Online", url: "/casino/ruleta" },
       { name: "Slots", url: "/casino/slots" },
     ],
   };
