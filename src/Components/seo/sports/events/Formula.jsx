@@ -8,7 +8,7 @@ import Floating from "../../Floating";
 import TableOfContents from "../../TableOfContents";
 
 export default function Formula(props) {
-  const title = "Apuesta para el Grand Prix de F1 | Codere®";
+  const title = "Apuesta para el Grand Prix de F1 » Bono $50.000 | Codere®";
   const description =
     "Los máximos eventos en el automovilismo, que se realizan por prestigio y popularidad son conocidos como Grandes Premios, aprende aquí como apostar.";
   const json = {
