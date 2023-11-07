@@ -13,7 +13,7 @@ export default function EventosDeportivos(props) {
   const directions = ["left", "down", "right", "left"];
   const prefix = "https://www.codere.bet.ar/assets/seo/sport/";
 
-  const title = "Apuesta en los mejores eventos desde Argentina | Codere®";
+  const title = "Los Mejores Eventos Deportivos  » Bono $50.000 | Codere®";
   const description =
     "Encuentra aquí las guías para apostar en línea a tus eventos deportivos favoritos al rededor del mundo. Juega con Codere.";
 
