@@ -18,7 +18,7 @@ export default function Balenco(props) {
     window.scrollTo(0, 0);
   }, []);
 
-  const title = "Apuesta para Mundial de Baloncesto 🏀 | Codere®";
+  const title = "Apuesta Mundial Baloncesto » Bono $50.000  | Codere®";
   const description =
     "El baloncesto al ser un deporte con más estadísticas y podemos encontrar apuestas de todo tipo. Aprende en Codere como apostar en el deporte favorito.";
 
