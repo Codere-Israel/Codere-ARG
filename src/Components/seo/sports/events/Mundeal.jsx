@@ -19,7 +19,7 @@ export default function Balenco(props) {
     window.scrollTo(0, 0);
   }, []);
 
-  const title = "Apuesta para el Mundial de Fútbol | Codere®";
+  const title = "Apuesta para el Mundial de Fútbol » Bono $50.000 | Codere®";
   const description =
     "Acá te dejamos una explicación sobre en qué consisten algunas populares opciones de apuesta y algunas que no son tan populares. Apuesta en Codere.";
   const prefix = `https://www.codere.bet.ar/seopages/eventos-deportivos/fifa/imgs/${
