@@ -35,9 +35,9 @@ function Header(props) {
     "https://m.caba.codere.bet.ar/deportes/#/HomePage?openlogin=true";
 
   const LOGO =
-    new Date() >= new Date("2022-12-30T22:00:00Z")
-      ? "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/Splash/riverPlateTopLogo.svg"
-      : "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/christmassLogo.gif";
+      new Date() <= new Date("2023-12-30T22:00:00Z") && new Date() >= new Date("2023-12-01T07:00:00Z")
+        ? "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/christmassLogo.gif"
+      : "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/Splash/riverPlateTopLogo.svg";
 
   // Hooks
   const [show, setShow] = useState(false);
