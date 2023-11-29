@@ -37,7 +37,7 @@ function MySwiper(props) {
   const [showTycModal, setShowTycModal] = useState(false);
   const [ctaText, setCtaText] = useState("Registrate");
   const [ctaLink, setCtaLink] = useState(
-    "https://m.codere.pa/deportespanama/#/RegistroPAPage"
+    "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage"
   );
 
   if (!props.flag) imgs = banners.desktop_slide_list.filter(BannerFilter);
@@ -58,7 +58,7 @@ function MySwiper(props) {
       setCtaLink(imgs[swiper.realIndex].ctaLink);
     } else {
       setCtaText("Regístrate");
-      setCtaLink("https://m.codere.pa/deportespanama/#/RegistroPAPage");
+      setCtaLink("https://m.caba.codere.bet.ar/deportes/#/RegistroARPage");
     }
 
     if (imgs[swiper.realIndex].tycType) {
