@@ -5,6 +5,8 @@
       "img_alt": "river-plate",
       "ctaURL": "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
       "tycType": "sport",
+      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/WB%20ARG%20SPORT.aspx",
+      "name": "Bono de Bienvenida",
       "scheduled": false
     },
     {
@@ -37,9 +39,10 @@
     {
       "image": "https://www.codere.bet.ar/assets/splash-banners/rp-offer-mobile.jpg",
       "img_alt": "river-plate",
-
+      "name": "Bono de Bienvenida",
       "ctaURL": "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
       "tycType": "sport",
+      "tycLink": "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage?url=https://www.codere.bet.ar/PromosCalidad/actives/WB%20ARG%20SPORT.aspx",
       "scheduled": false
     },
     {
@@ -52,21 +55,19 @@
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/bannerMobile2.jpg",
       "img_alt": "Online Codere",
       "ctaURL": "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
-      "tycLink": "",
       "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/payment-banner-mobile.jpg",
       "img_alt": "Métodos de Pago",
       "ctaURL": "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
-      "tycLink": "",
+
       "scheduled": false
     },
     {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/bannerMobile6.jpg",
       "img_alt": "Bingo",
       "ctaURL": "https://bingos.codere.bet.ar/",
-      "tycLink": "",
       "scheduled": false,
       "ctaText": "visitanos"
     }
