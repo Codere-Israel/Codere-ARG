@@ -52,9 +52,6 @@ export default class SlideButton extends Component {
       this.isDragging = false;
       if (this.sliderLeft > this.containerWidth * 0.55) {
         window.location.href = this.props.regis;
-        // this.props.regisButtonText === "Registrate" ?
-        // window.location.href = this.props.regis :
-        // window.open(this.props.regis, "_blank");
 
         this.sliderLeft = this.containerWidth;
         if (this.props.onSuccess) {
@@ -110,31 +107,33 @@ export default class SlideButton extends Component {
   render() {
     return (
       <>
-        <a href={this.props.regis} rel={"nofollow"}>
-          <div
-            className={
-              "rsbContainer " +
-              (this.state.unlocked ? "rsbContainerUnlocked" : "")
-            }
-            ref={container}
-          >
+        <div className="ReactSwipeButton mobile_regis">
+          <a href={this.props.regis} rel={"nofollow"}>
             <div
-              className="rsbcSlider"
-              ref={slider}
-              onMouseDown={this.startDrag}
-              onTouchStart={this.startDrag}
+              className={
+                "rsbContainer " +
+                (this.state.unlocked ? "rsbContainerUnlocked" : "")
+              }
+              ref={container}
             >
-              {/* <span className="rsbcSliderArrow"></span> */}
-              <span className="rsbcSliderCircle">
-                <FontAwesomeIcon icon={faChevronRight} />
-              </span>
+              <div
+                className="rsbcSlider"
+                ref={slider}
+                onMouseDown={this.startDrag}
+                onTouchStart={this.startDrag}
+              >
+                {/* <span className="rsbcSliderArrow"></span> */}
+                <span className="rsbcSliderCircle">
+                  <FontAwesomeIcon icon={faChevronRight} />
+                </span>
+              </div>
+              <div className="rsbcText shine">{this.props.regisButtonText}</div>
             </div>
-            <div className="rsbcText shine">{this.props.regisButtonText}</div>
-          </div>
-        </a>
-        <p style={{ color: "#fff", fontSize: ".75rem", margin: 0 }}>
-          Disponible únicamente dentro de CABA
-        </p>
+          </a>
+          <p style={{ color: "#fff", fontSize: ".75rem" }}>
+            Disponible únicamente dentro de CABA
+          </p>
+        </div>
       </>
     );
   }
