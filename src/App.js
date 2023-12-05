@@ -15,13 +15,20 @@ import Routing from "./routes/Routing";
 
 export const regis = "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage";
 export const isMobileContext = React.createContext();
+export function dateInBetween(banner) {
+  return (
+    new Date() >= new Date(banner.startDate) &&
+    new Date() <= new Date(banner.endDate)
+  );
+}
+
 function App() {
   const [flag, setFlag] = useState(isMobile);
   const [windowSize, setWindowSize] = useState({
     width: undefined,
     height: undefined,
   });
-  const [showTimer, setShowTimer] = useState(false);
+  // const [showTimer, setShowTimer] = useState(false);
 
   useEffect(() => {
     if (windowSize.width <= 768 || isMobile) setFlag(true);

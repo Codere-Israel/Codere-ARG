@@ -10,11 +10,11 @@ import {
   Table,
 } from "react-bootstrap";
 import { Helmet } from "react-helmet";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-export default function Balenco(props) {
+export default function Mundeal(props) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

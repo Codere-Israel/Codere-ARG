@@ -91,7 +91,7 @@ export default function Inicio(props) {
     <>
       <Helmet>
         <title>
-        Apuestas Deportivas y Casino Online » Bono $50.000 | Codere®
+          Apuestas Deportivas y Casino Online » Bono $50.000 | Codere®
         </title>
         <meta
           name="description"
@@ -104,6 +104,7 @@ export default function Inicio(props) {
       </Helmet>
       <MySwiper flag={props.flag} />
       <Games />
+
       <Content />
     </>
   );

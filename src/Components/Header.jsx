@@ -9,7 +9,7 @@ import {
   Accordion,
   InputGroup,
 } from "react-bootstrap";
-import { isMobileContext } from "../App";
+import { dateInBetween, isMobileContext } from "../App";
 import React, { useState, useEffect } from "react";
 // import Axios from "axios";
 import { elastic as Menu } from "react-burger-menu";
@@ -29,15 +29,21 @@ import {
 import { Link, NavLink } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-
 function Header(props) {
   const acceder =
     "https://m.caba.codere.bet.ar/deportes/#/HomePage?openlogin=true";
 
-  const LOGO =
-      new Date() <= new Date("2023-12-30T22:00:00Z") && new Date() >= new Date("2023-12-01T07:00:00Z")
-        ? "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/christmassLogo.gif"
-      : "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/Splash/riverPlateTopLogo.svg";
+  const logoSchedule = {
+    startDate: "2023-12-01T07:00:00Z",
+    endDate: "2023-12-30T22:00:00Z",
+  };
+
+  const christmassLogo =
+    "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/christmassLogo.gif";
+  const riverPlateLogo =
+    "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/Splash/riverPlateTopLogo.svg";
+
+  const LOGO = dateInBetween(logoSchedule) ? christmassLogo : riverPlateLogo;
 
   // Hooks
   const [show, setShow] = useState(false);
@@ -66,7 +72,6 @@ function Header(props) {
       target: "_self",
     },
     {
-
       icon: faHeart,
       name: "En Vivo",
       url: "https://m.caba.codere.bet.ar/deportes/#/CasinoenVivoPage",
@@ -74,7 +79,6 @@ function Header(props) {
     },
 
     {
-
       icon: faBullhorn,
       name: "Promociones",
       url: "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",

@@ -330,11 +330,14 @@ body {
 
 .mob-tyc {
   text-align: center;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-decoration: underline;
 }
 
 .mob-tyc a {
   position: relative;
-  top: -3.25rem;
+  top: -1.25rem;
 }
 
 .tyc {
@@ -549,7 +552,7 @@ body {
 #carousel-section {
   position: relative;
   top: 4rem;
-  /* margin-bottom: 2.2vw; */
+  min-height: 60vh;
 }
 
 /* Swiper */
@@ -558,9 +561,8 @@ body {
   width: 100%;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 7.5vw !important;
+.swiper-pagination {
+  bottom: 6rem !important;
 }
 
 .swiper-pagination-bullet-active {
@@ -1239,7 +1241,6 @@ footer.nb-footer .footer-info-single p {
   }
 
   .modal-dialog {
-    /* top: 23vw; */
     margin: auto;
     width: 84%;
   }
@@ -1483,14 +1484,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   #carousel-section {
     top: 14vw;
-    /* min-height: 40vh; */
+    min-height: 70vh;
     /* margin-bottom: 14vw; */
   }
-
-  /* .swiper-horizontal > .swiper-pagination-bullets,
-  .swiper-pagination-bullets.swiper-pagination-horizontal {
-    bottom: 0 !important;
-  } */
 
   /* Games */
 
@@ -1527,7 +1523,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 
   .swiper-pagination {
-    bottom: 15vw !important;
+    bottom: 12vw !important;
   }
 
   .swiper-pagination-bullet {
