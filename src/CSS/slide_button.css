@@ -1,140 +1,204 @@
-import "../CSS/slide_button.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+/* CSS */
 
-import React, { Component } from "react";
+.mobile_regis:active {
+  box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+}
 
-const slider = React.createRef();
-const container = React.createRef();
-const isTouchDevice = "ontouchstart" in document.documentElement;
+.ReactSwipeButton.mobile_regis {
+  width: 77vw;
+  height: 16vw;
+  box-shadow: 0px 7px 7px -4px rgb(0 0 0);
+}
 
-export default class SlideButton extends Component {
-  state = {};
+.ReactSwipeButton {
+  /* background: linear-gradient(180deg, #0587f5, #0263b5); */
+  background-color: #0055fe;
+  /* box-shadow: 0 0.7em 1.5em -0.5em #14a73e98; */
+  color: #fff;
+  border-radius: 20em;
+  text-align: center;
+  margin: auto;
+  float: left;
+  width: 85%;
+  height: 50px;
+  position: absolute;
+  bottom: 28.5vw;
+  z-index: 1;
+}
 
-  componentDidMount() {
-    if (isTouchDevice) {
-      document.addEventListener("touchmove", this.onDrag);
-      document.addEventListener("touchend", this.stopDrag);
-    } else {
-      document.addEventListener("mousemove", this.onDrag);
-      document.addEventListener("mouseup", this.stopDrag);
-    }
-    this.containerWidth = container.current.clientWidth - 50;
+.ReactSwipeButton,
+.ReactSwipeButton * {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    not supported by any browser */
+}
+
+.ReactSwipeButton {
+  float: unset;
+  position: relative;
+}
+
+.rsbContainer {
+  float: unset;
+  width: 100%;
+  height: 100%;
+  /* background: #0055fe; */
+  border-radius: 50px;
+  /* position: relative; */
+  /* box-shadow: inset 1px 1px 4px rgba(255, 255, 255, 0.1); */
+  overflow: hidden;
+}
+
+.rsbContainerUnlocked {
+  width: 50% !important;
+  margin-left: 25%;
+  transition: 1.5s;
+  cursor: default;
+}
+
+.rsbContainerUnlocked .rsbcSlider {
+  cursor: default;
+  pointer-events: none;
+  transition: all 3000ms ease-in-out;
+}
+
+.rsbContainerUnlocked .rsbcSliderArrow {
+  transition: 0.5s;
+  margin-right: -3vw;
+}
+
+.rsbContainerUnlocked .rsbcSliderCircle {
+  transition: 0.5s;
+  margin-right: -3vw;
+}
+
+.rsbcSlider {
+  /* background: rgba(55, 33, 255, 0.85); */
+  float: left;
+  width: 100%;
+  position: relative;
+  height: 50px;
+  top: 0;
+  left: 13vw;
+  margin-left: -100%;
+  border-radius: 25px;
+  z-index: 1;
+  /* box-shadow: 1px 1px 5px rgb(0 0 0 / 30%); */
+  cursor: pointer;
+  /* transition: left 150ms; */
+}
+
+.rsbcSliderText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  line-height: 50px;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 13px;
+}
+
+#game-svg {
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+
+.rsbcSliderCircle .svg-inline--fa {
+  top: 2.2vw;
+  width: 5vw;
+  height: auto;
+  animation-name: sds2;
+  animation-duration: 750ms;
+  position: relative;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+}
+@keyframes sds2 {
+  0% {
+    transform: translateX(0.6rem);
   }
 
-  onDrag = (e) => {
-    // console.log(this.sliderLeft);
-    if (this.unmounted || this.state.unlocked) return;
-    if (this.isDragging) {
-      if (isTouchDevice) {
-        this.sliderLeft = Math.min(
-          Math.max(0, e.touches[0].clientX - this.startX),
-          this.containerWidth
-        );
-      } else {
-        this.sliderLeft = Math.min(
-          Math.max(0, e.clientX - this.startX),
-          this.containerWidth
-        );
-      }
-      this.updateSliderStyle();
-    }
-  };
-
-  updateSliderStyle = () => {
-    if (this.unmounted || this.state.unlocked) return;
-    slider.current.style.left = this.sliderLeft + 50 + "px";
-  };
-
-  stopDrag = () => {
-    if (this.unmounted || this.state.unlocked) return;
-    if (this.isDragging) {
-      this.isDragging = false;
-      if (this.sliderLeft > this.containerWidth * 0.55) {
-        window.location.href = this.props.regis;
-
-        this.sliderLeft = this.containerWidth;
-        if (this.props.onSuccess) {
-          this.props.onSuccess();
-          this.onSuccess();
-        }
-      } else {
-        this.sliderLeft = 0;
-        if (this.props.onFailure) {
-          this.props.onFailure();
-        }
-      }
-      this.updateSliderStyle();
-    }
-  };
-
-  startDrag = (e) => {
-    if (this.unmounted || this.state.unlocked) return;
-    this.isDragging = true;
-    if (isTouchDevice) {
-      this.startX = e.touches[0].clientX;
-    } else {
-      this.startX = e.clientX;
-    }
-  };
-
-  onSuccess = () => {
-    container.current.style.width = container.current.clientWidth + "px";
-    this.setState({
-      unlocked: true,
-    });
-    // console.log(container.current.style.width);
-  };
-
-  getText = () => {
-    return this.state.unlocked
-      ? this.props.text_unlocked || "UNLOCKED"
-      : this.props.text || "SLIDE";
-  };
-
-  reset = () => {
-    if (this.unmounted) return;
-    this.setState({ unlocked: false }, () => {
-      this.sliderLeft = 0;
-      this.updateSliderStyle();
-    });
-  };
-
-  componentWillUnmount() {
-    this.unmounted = true;
+  50% {
+    transform: translateX(-0.3rem);
   }
 
-  render() {
-    return (
-      <>
-        <div className="ReactSwipeButton mobile_regis">
-          <a href={this.props.regis} rel={"nofollow"}>
-            <div
-              className={
-                "rsbContainer " +
-                (this.state.unlocked ? "rsbContainerUnlocked" : "")
-              }
-              ref={container}
-            >
-              <div
-                className="rsbcSlider"
-                ref={slider}
-                onMouseDown={this.startDrag}
-                onTouchStart={this.startDrag}
-              >
-                {/* <span className="rsbcSliderArrow"></span> */}
-                <span className="rsbcSliderCircle">
-                  <FontAwesomeIcon icon={faChevronRight} />
-                </span>
-              </div>
-              <div className="rsbcText shine">{this.props.regisButtonText}</div>
-            </div>
-          </a>
-          <p style={{ color: "#fff", fontSize: ".75rem" }}>
-            Disponible únicamente dentro de CABA
-          </p>
-        </div>
-      </>
-    );
+  100% {
+    transform: translateX(0.6rem);
+  }
+}
+
+.jugar-div .svg-inline--fa {
+  animation-name: sts2;
+  animation-duration: 0.4s;
+  margin-left: 0.3vw;
+}
+
+.rsbcSliderCircle {
+  /* box-shadow: 0 -0.7em 0.9em 0.5em #14a73e98; */
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  background: #12459e;
+  right: -2.5vw;
+  top: 1.8vw;
+  height: 13vw;
+  width: 13.5vw;
+  border-radius: 100%;
+  z-index: 999999999;
+  /* transition: all 3s; */
+}
+
+.rsbcText {
+  float: left;
+  position: absolute;
+  top: 0.4vw;
+  left: 9vw;
+  right: 0;
+  line-height: 16vw;
+  font-family: "Roboto", sans-serif;
+  font-size: 7vw;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Shine */
+
+.shine {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.85) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.85) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
   }
 }

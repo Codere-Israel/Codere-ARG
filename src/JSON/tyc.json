@@ -8,11 +8,11 @@
       },
       {
         "bolded": "PERIODO",
-        "text": "La promoción es válida para usuarios que se registren a través de codere.bet.ar y se inscriban en la promoción a partir del 31 de Mayo de 2023."
+        "text": "La promoción es válida para usuarios que se registren a través de codere.bet.ar y se inscriban en la promoción a partir del 07 de Noviembre de 2023."
       },
       {
         "bolded": "EXPLICACIÓN",
-        "text": "La oferta consiste en un bono de bienvenida del 100% del primer depósito hasta $10.000. El monto mínimo a Depositá para optar a la promoción es de $500 y será sobre el que se aplique la promoción, considerando los límites establecidos. Para optar a la promoción es necesario inscribirse."
+        "text": "La oferta consiste en un bono de bienvenida del 100% del primer depósito hasta $50.000. El monto mínimo a depositar para optar a la promoción es de $500 y será sobre el que se aplique la promoción, considerando los límites establecidos. Para optar a la promoción es necesario inscribirse."
       },
       {
         "bolded": "IMPORTE",
@@ -24,15 +24,15 @@
       },
       {
         "bolded": "PREMIO",
-        "text": "La Freebet tendrá un valor del importe del depósito realizado. En caso de que el importe a entregar no fuera múltiplo de $1.000 se redondeará al alza. (Salvo el importe mínimo de $500 que será una FB de $500). Si el usuario hace una solicitud de cobro durante el periodo oferta, el bono quedará invalidado. Esquema del bono:",
+        "text": "Las Freebets tendrán un valor del importe del depósito realizado, y se redondearán al alza en cantidades de freebet múltiplos de 1000. Si el usuario hace una solicitud de cobro durante el periodo oferta, el bono quedará invalidado. Esquema del bono",
         "table": {
           "th": ["Bono", "Condiciones Previas"],
           "tr": [
             [
-              "100% extra hasta $10.000",
+              "100% extra hasta $50.000",
               [
                 "Hacer un primer depósito de mínimo $500",
-                "Realizar apuestas (cuota mínima 2.5) por el valor de tu primer depósito.",
+                "Realizar apuestas (cuota mínima 2.5) por el valor del 100% de tu primer depósito.",
                 "No haber realizado ninguna solicitud de cobro."
               ]
             ]
