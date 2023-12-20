@@ -31,19 +31,19 @@ function Footer() {
         </div>
         <div className="methods">
           <img
-            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/img/logotransfbancaria.png"
+            src="https://www.codere.bet.ar/argentina/images/homepage/desktop/marcado_pago.webp"
             alt="Transferencia Bancaria"
           />
           <img
-            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/FooterMasterCard.png"
+            src="https://www.codere.bet.ar/argentina/images/homepage/desktop/mastercard.webp"
             alt="Master-Card"
           />
           <img
-            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/Debin.png"
+            src="https://www.codere.bet.ar/argentina/images/homepage/desktop/Debin.webp"
             alt="Debin"
           />
           <img
-            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/mercado-pago.svg"
+            src="https://www.codere.bet.ar/argentina/images/homepage/desktop/transferencia_bancaria.webp"
             alt="Mercado Pago"
           />
         </div>
