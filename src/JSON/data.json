@@ -1,14 +1,6 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/aniversario-mundial-desktop.jpg",
-      "img_alt": "aniversario-mundial",
-      "ctaURL": "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
-      "tycType": "special",
-      "name": "¡BONO DE BIENVENIDA ANIVERSARIO HASTA $100.000 EN FREEBETS!",
-      "scheduled": false
-    },
-    {
       "image": "https://www.codere.bet.ar/assets/splash-banners/rp-offer-desktop.jpg",
       "img_alt": "river-plate",
       "ctaURL": "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
@@ -43,14 +35,6 @@
     }
   ],
   "mobile_slide_list": [
-    {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/aniversario-mundial-mobile.jpg",
-      "img_alt": "aniversario-mundial",
-      "name": "¡BONO DE BIENVENIDA ANIVERSARIO HASTA $100.000 EN FREEBETS!",
-      "ctaURL": "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
-      "tycType": "special",
-      "scheduled": false
-    },
     {
       "image": "https://www.codere.bet.ar/assets/splash-banners/rp-offer-mobile.jpg",
       "img_alt": "river-plate",
