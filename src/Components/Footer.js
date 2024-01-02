@@ -42,7 +42,7 @@ function Footer() {
             src="https://www.codere.bet.ar/argentina/images/homepage/desktop/Debin.webp"
             alt="Debin"
           />
-          <img
+          <img className={'methodsLastLogo'}
             src="https://www.codere.bet.ar/argentina/images/homepage/desktop/transferencia_bancaria.webp"
             alt="Mercado Pago"
           />

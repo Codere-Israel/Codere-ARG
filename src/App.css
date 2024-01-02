@@ -1092,11 +1092,11 @@ footer.nb-footer .about .social-media {
   border-right: 3px solid #79c000;
 }
 
-/*.methods img:last-child {*/
-/*  border-right: unset;*/
-/*  width: 9rem;*/
-/*  height: auto;*/
-/*}*/
+.methods img:last-child {
+  border-right: unset;
+  width: 9rem;
+  height: auto;
+}
 
 .about .social-media ul li a {
   display: inline-block;
@@ -1213,6 +1213,9 @@ footer.nb-footer .footer-info-single p {
   padding: 0.3rem;
 }
 
+.methodsLastLogo {
+  border:unset;
+  }
 /* End Footer */
 
 /* Mobile */
@@ -1624,32 +1627,22 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .sponsor {
     padding-top: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
   }
 
   .methods {
     display: flex;
-    flex-wrap:wrap;
     align-items: center;
-    justify-content: space-evenly;
-    /*flex-wrap: wrap;*/
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 
   .methods img {
-    margin:0;
-    padding:0;
-    /*border: unset;*/
-    /*height: auto;*/
-    /*width: 10rem;*/
-    border:none;
+    border: unset;
+    height: auto;
+    width: 10rem;
   }
 
-
-  /*.methods img:last-child {*/
-  /*  !*border-right: unset;*!*/
-  /*  width: unset;*/
-  /*  height: unset;*/
-  /*  }*/
   #legals {
     display: flex;
     width: 95%;
