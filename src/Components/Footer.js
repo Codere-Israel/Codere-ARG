@@ -279,7 +279,7 @@ function Footer() {
                       target="_blank"
                       className="whatsapp"
                     >
-                      <FontAwesomeIcon icon={faWhatsapp} />
+                      <WhatsappGreen className={"ayudaIconsFooter"}   />
                       {"  "} +549 1136 822558
                     </a>
                   </li>

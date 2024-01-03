@@ -1126,10 +1126,18 @@ footer.nb-footer .about .social-media {
   color: #25d366;
   /* font-size: 1.2rem; */
 }
+.whatsapp {
+  display:flex;
+  align-items:center;
+  }
 .whatsapp:hover .fa-whatsapp {
   color: #79c000;
 }
-
+.ayudaIconsFooter {
+  width:15px;
+  height:15px;
+  margin-right:.2rem;
+  }
 .fa-facebook-f {
   color: #4267b2;
 }
@@ -1717,7 +1725,7 @@ h2.comoJugar > button.accordion-button{
 /* Mobile */
 @media only screen and (max-width: 767px) {
   .whatsapplogo {
-    width:10vw !important;
+    width:8vw !important;
     }
 
   .about .social-media ul li a > svg {
