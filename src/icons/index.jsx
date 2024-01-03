@@ -22,6 +22,9 @@ export { ReactComponent as Youtube } from './social/youtube-color-icon.svg';
 export { ReactComponent as CodereChat } from './social/contact-us-icon.svg';
 export { ReactComponent as Phone } from './social/phone.svg';
 export { ReactComponent as Whatsapp } from './social/whatsapp.svg';
+export { ReactComponent as Whatsapp96 } from './social/whatsapp-96.svg';
+export { ReactComponent as Whatsapp250 } from './social/whatsapp250.svg';
+export { ReactComponent as WhatsappGreen } from './social/whatsappGreen.svg';
 
 
 //other

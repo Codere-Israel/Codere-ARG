@@ -6,6 +6,7 @@ import {
   faYoutube,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
+import { CodereChat, Facebook, Instagram, Twitter, Youtube, Phone, Whatsapp, Whatsapp96, Whatsapp250, WhatsappGreen } from '../icons';
 
 // Codere Footer \\
 function Footer() {
@@ -59,7 +60,7 @@ function Footer() {
                   title=""
                   rel="nofollow"
                 >
-                  <FontAwesomeIcon icon={faFacebookF} />
+                  <Facebook />
                 </a>
               </li>
               <li>
@@ -68,7 +69,7 @@ function Footer() {
                   title=""
                   rel="nofollow"
                 >
-                  <FontAwesomeIcon icon={faInstagram} />
+                  <Instagram />
                 </a>
               </li>
               <li>
@@ -77,7 +78,7 @@ function Footer() {
                   title=""
                   rel="nofollow"
                 >
-                  <FontAwesomeIcon icon={faXTwitter} />
+                  <Twitter />
                 </a>
               </li>
               <li>
@@ -86,7 +87,7 @@ function Footer() {
                   title=""
                   rel="nofollow"
                 >
-                  <FontAwesomeIcon icon={faWhatsapp} />
+                  <WhatsappGreen className={'whatsapplogo'}  />
                 </a>
               </li>
             </ul>

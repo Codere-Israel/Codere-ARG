@@ -28,6 +28,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Arrowrightw, Arrowdown, Deportes, LocalesMenuIcon, Promociones, Ruletasenvivo, CasinoMenuIcon, Directo } from '../icons';
 
 function Header(props) {
   const acceder =
@@ -54,38 +55,38 @@ function Header(props) {
 
   const menu = [
     {
-      icon: faCrosshairs,
+      icon: Deportes,
       name: "Deportes",
       url: "https://m.caba.codere.bet.ar/deportes/#/HomePage",
       target: "_self",
     },
     {
-      icon: faCirclePlay,
+      icon: Directo,
       name: "Directo",
       url: "https://m.caba.codere.bet.ar/deportes/#/DirectosPage",
       target: "_self",
     },
     {
-      icon: faCoins,
+      icon: CasinoMenuIcon,
       name: "Casino",
       url: "https://m.caba.codere.bet.ar/deportes/#/CasinoPage",
       target: "_self",
     },
     {
-      icon: faHeart,
+      icon: Ruletasenvivo,
       name: "En Vivo",
       url: "https://m.caba.codere.bet.ar/deportes/#/CasinoenVivoPage",
       target: "_self",
     },
 
     {
-      icon: faBullhorn,
+      icon: Promociones,
       name: "Promociones",
       url: "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
       target: "_self",
     },
     {
-      icon: faGlobe,
+      icon: LocalesMenuIcon,
       name: "Nuestras Salas",
       url: "https://bingos.codere.bet.ar",
       target: "_blank",
@@ -220,9 +221,14 @@ function Header(props) {
                         target={m.target}
                         rel="nofollow"
                       >
-                        <FontAwesomeIcon icon={m.icon} />
-                        {m.name}
-                        <FontAwesomeIcon icon={faAngleRight} />
+                        <div className={'mobMenuSVGwrapper'}>
+                          {(React.createElement (m.icon, { className: "mobileMenuIcon" }))}
+                          {m.name}
+                        </div>
+
+                        <div className={'arrowright'}>
+                          < Arrowrightw/>
+                        </div>
                       </NavLink>
                     ))}
 
@@ -235,7 +241,7 @@ function Header(props) {
                               <li key={k}>
                                 <Link to={s.url} onClick={hamburgerHandler}>
                                   {s.name}
-                                  <FontAwesomeIcon icon={faAngleRight} />
+                                  < Arrowrightw/>
                                 </Link>
                               </li>
                             ))}
@@ -303,7 +309,7 @@ function Header(props) {
                 <div className="header-group-right">
                   <Dropdown>
                     <Dropdown.Toggle className="header_btn">
-                      <FontAwesomeIcon icon={faAngleDown} />
+                      < Arrowdown/>
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                       {seo_menu.map((s, k) => (
