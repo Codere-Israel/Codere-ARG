@@ -1633,14 +1633,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .methods {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
   }
 
-  .methods img {
-    border: unset;
-    height: auto;
-    width: 10rem;
+  .footerLogo {
+    width :9rem;
+    margin:4px;
+    }
+  .footerLogo img {
+    padding:0;
   }
 
   #legals {
