@@ -1092,11 +1092,11 @@ footer.nb-footer .about .social-media {
   border-right: 3px solid #79c000;
 }
 
-.methods img:last-child {
-  border-right: unset;
-  width: 9rem;
-  height: auto;
-}
+
+.methodsLastLogo  {
+  border:unset !important;
+  }
+
 
 .about .social-media ul li a {
   display: inline-block;
@@ -1213,9 +1213,16 @@ footer.nb-footer .footer-info-single p {
   padding: 0.3rem;
 }
 
-.methodsLastLogo {
-  border:unset;
+
+
+.methods {
+  margin-top:1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   }
+
 /* End Footer */
 
 /* Mobile */
@@ -1627,7 +1634,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
   .sponsor {
     padding-top: 0;
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
   }
 
   .methods {
@@ -1635,10 +1642,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top:0;
   }
-
+  .methods img {
+    border:none;
+    }
   .footerLogo {
-    width :9rem;
+    width :6rem;
     margin:4px;
     }
   .footerLogo img {
