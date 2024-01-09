@@ -4,28 +4,14 @@ import {
   Nav,
   Navbar,
   Dropdown,
-  Modal,
-  Form,
   Accordion,
   InputGroup,
 } from "react-bootstrap";
 import { dateInBetween, isMobileContext } from "../App";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // import Axios from "axios";
 import { elastic as Menu } from "react-burger-menu";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleDown,
-  faAngleRight,
-  faGlobe,
-  faCirclePlay,
-  faBullhorn,
-  faCrosshairs,
-  faCoins,
-  faFlag,
-  faStar,
-  faHeart,
-} from "@fortawesome/free-solid-svg-icons";
+
 import { Link, NavLink } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Arrowrightw, Arrowdown, Deportes, LocalesMenuIcon, Promociones, Ruletasenvivo, CasinoMenuIcon, Directo } from '../icons';
@@ -94,34 +80,29 @@ function Header(props) {
   ];
 
   const seo_menu = [
-    { name: "Casino", url: "/casino", icon: faCoins, isSPA: true },
+    { name: "Casino", url: "/casino",  isSPA: true },
     {
       name: "Casino en vivo",
       url: "/casino/casino-en-vivo",
-      icon: faCoins,
       isSPA: true,
     },
     {
       name: "Ruleta",
       url: "/casino/ruleta",
-      icon: faStar,
       isSPA: true,
     },
     {
       name: "Slots",
       url: "/casino/slots",
-      icon: faFlag,
       isSPA: true,
     },
     {
       name: "Blackjack",
       url: "/casino/blackjack",
-      icon: faHeart,
     },
     {
       name: "Eventos Deportivos",
       url: "/eventos-deportivos",
-      icon: faHeart,
     },
   ];
 
@@ -234,7 +215,7 @@ function Header(props) {
 
                     <Accordion className="hamb-accordion">
                       <Accordion.Item eventKey="0">
-                        <Accordion.Header>¿Cómo jugar?</Accordion.Header>
+                        <Accordion.Header className={'codereAcordeonTX'}>¿Cómo jugar?</Accordion.Header>
                         <Accordion.Body>
                           <ul>
                             {seo_menu.map((s, k) => (

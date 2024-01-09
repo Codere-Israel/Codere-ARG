@@ -6,6 +6,15 @@ html,
 body {
   overflow-x: hidden !important;
 }
+:root {
+  --codereGreen: #79c000;
+  }
+.codereGreen{
+  color:#79c000 !important;
+  }
+.codereAcordeonTX > button {
+  color: var(--codereGreen);
+  }
 
 ::-webkit-scrollbar-track {
   /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
@@ -1019,7 +1028,7 @@ img.game_logo:hover {
 
 .hamb-accordion .accordion-button:not(.collapsed),
 .hamb-accordion .accordion-button {
-  color: #fff;
+  /*color: #fff;*/
   font-size: 5vw;
   border-bottom: #fff 1px solid;
   border: unset;
@@ -1329,9 +1338,7 @@ footer.nb-footer .footer-info-single p {
     padding-top: 3vw;
   }
 
-  #father a svg:first-child {
-    margin-right: 3vw;
-  }
+
 
   /* Hamburger */
 
@@ -1752,12 +1759,8 @@ h2.comoJugar > button.accordion-button{
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
-border:none;
-    /* border-bottom: #fff 1px solid; */
-    padding: 1vw 3.5vw;
+    border:none;
     padding-top: 3vw;
-
-    /* margin-left: 3vw; */
     display: flex !important;
     justify-content: space-between;
     align-items: center;
@@ -1770,7 +1773,7 @@ border:none;
     }
   .mobMenuSVGwrapper svg {
     margin-right: 0.5rem;
-    height: 1em !important;
+    height: 1.6em !important;
     min-width: 36px;
     }
   }

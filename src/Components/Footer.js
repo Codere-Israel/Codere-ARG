@@ -1,11 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faInstagram,
-  faXTwitter,
-  faYoutube,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
+
 import { CodereChat, Facebook, Instagram, Twitter, Youtube, Phone, Whatsapp, Whatsapp96, Whatsapp250, WhatsappGreen } from '../icons';
 
 // Codere Footer \\

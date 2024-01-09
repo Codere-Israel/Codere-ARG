@@ -1,5 +1,4 @@
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { Col, Container, Nav, Row } from "react-bootstrap";
 
 export default function TableOfContents(props) {
