@@ -136,12 +136,16 @@
   color: #fff;
 }
 
-.content-table a:hover,
-.content-table a:active,
-.content-table a:focus {
+.content-table a:hover{
   color: #4b7502 !important;
 }
 
+
+.content-table a:active,
+.content-table a:focus{
+  color: #ffffff !important;
+
+  }
 #tipos h2,
 #tipos h3 {
   color: #79c000;
