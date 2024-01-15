@@ -82,7 +82,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https://api.whatsapp.com/send?phone=5491136822558"
+                  href="https://api.whatsapp.com/send?phone=5491140457247"
                   title=""
                   rel="nofollow"
                 >
@@ -272,14 +272,14 @@ function Footer() {
                   <li style={{ color: "#fff" }}>0810-345-CODERE (2633)</li>
                   <li>
                     <a
-                      href="https://wa.me/50769314912"
+                      href="https://api.whatsapp.com/send?phone=5491140457247"
                       title=""
                       rel="nofollow"
                       target="_blank"
                       className="whatsapp"
                     >
                       <FontAwesomeIcon icon={faWhatsapp} />
-                      {"  "} +549 1136 822558
+                      {"  "} +549 1140 457247
                     </a>
                   </li>
                 </ul>
