@@ -90,9 +90,10 @@ body {
 .header-group-right {
   display: flex;
   position: absolute;
-  align-items: flex-start;
   padding-top: 5px;
   right: 30px;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .navbar-nav {
@@ -1731,7 +1732,7 @@ h2.comoJugar > button.accordion-button{
   }
 
 .about .social-media ul li a > svg {
-  width: 2vw;
+  width: 1.5vw;
   }
 
 
