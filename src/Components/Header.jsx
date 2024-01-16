@@ -14,7 +14,7 @@ import { elastic as Menu } from "react-burger-menu";
 
 import { Link, NavLink } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Arrowrightw, Arrowdown, Deportes, LocalesMenuIcon, Promociones, Ruletasenvivo, CasinoMenuIcon, Directo } from '../icons';
+import { Arrowrightw, Arrowdown, Deportes, LocalesMenuIcon, Promociones, Ruletasenvivo, CasinoMenuIcon, Directo, ArrowdownBlack } from '../icons';
 
 function Header(props) {
   const acceder =
@@ -290,7 +290,7 @@ function Header(props) {
                 <div className="header-group-right">
                   <Dropdown>
                     <Dropdown.Toggle className="header_btn">
-                      < Arrowdown/>
+                      <ArrowdownBlack className={"arrowdownBlack"}/>
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                       {seo_menu.map((s, k) => (
