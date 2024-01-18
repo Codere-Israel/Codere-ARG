@@ -291,37 +291,26 @@ function Footer() {
         <hr style={{ marginBottom: "2vw" }} />
 
         <div className="juegas-banners">
-          <a
-            href="https://www.saberjugar.gob.ar/?page=linea-orientacion"
-            rel="nofollow"
-            target="_blank"
-          >
-            <img
-              src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/logo-lineagratuita.png"
-              alt="Línea gratuita"
-            />
-          </a>
-          <img
-            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/logomas18b.png"
-            alt="Mayor 18"
-          />
-
-          <a
+         <a
             href="https://m.caba.codere.bet.ar/deportes/#/SelfExclusion"
             rel="nofollow"
           >
             <img
-              src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/logo-autoexcluyete.png"
+              src="https://www.codere.bet.ar/assets/footer/Autoexcluite.webp"
               alt="Autoexclusión"
             />
           </a>
+          <img
+            src="https://www.codere.bet.ar/assets/footer/18.webp"
+            alt="Mayor 18"
+          />
           <a
             href="https://www.saberjugar.gob.ar/"
             rel="nofollow"
             target="_blank"
           >
             <img
-              src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/logoyLotba.svg"
+              src="https://www.codere.bet.ar/assets/footer/LoteriadelaCiudad.webp"
               alt="LOTBA"
             />
           </a>
@@ -331,7 +320,7 @@ function Footer() {
             target="_blank"
           >
             <img
-              src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/logobSJ.svg"
+              src="https://www.codere.bet.ar/assets/footer/SaberJugar.webp"
               alt="Saber Jugar"
             />
           </a>
@@ -340,10 +329,7 @@ function Footer() {
         <div id="legals" style={{ marginBottom: "2vw" }}>
           EL JUEGO COMPULSIVO ES PERJUDICIAL PARA VOS Y TU FAMILIA
           <br />
-          codere.bet.ar es un sitio operado por Codere Online Argentina S.A.
-          bajo permiso otorgado por LOTBA S.E. mediante DI-2021-238-GCABA-LOTBA
-          y DI-2023-359-GCABA-LOTBA. El ámbito de aplicación se circunscribe a
-          la Ciudad Autónoma de Buenos Aires.
+          codere.bet.ar es un sitio operado por Codere Online Argentina S.A. bajo permiso otorgado por LOTBA S.E. mediante DI-2021-238-GCABA-LOTBA y DI-2023-359-GCABA-LOTBA. El ámbito de aplicación se circunscribe a la Ciudad Autónoma de Buenos Aires.
         </div>
       </footer>
     </div>
