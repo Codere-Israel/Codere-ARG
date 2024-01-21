@@ -1217,6 +1217,14 @@ footer.nb-footer .footer-info-single p {
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .juegas-banners img {
+    height: 2.6rem;
+  }
+  
+  .juegas-banners  a:last-child img {
+    height: 2rem;
+  }
+  
   /* Cookie */
   .cookie-btn {
     width: 92vw;
