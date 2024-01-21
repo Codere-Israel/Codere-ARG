@@ -329,6 +329,8 @@ function Footer() {
         <div id="legals" style={{ marginBottom: "2vw" }}>
           EL JUEGO COMPULSIVO ES PERJUDICIAL PARA VOS Y TU FAMILIA
           <br />
+          0800-666-6006 Línea de orientación por juego problemático
+          <br />
           codere.bet.ar es un sitio operado por Codere Online Argentina S.A. bajo permiso otorgado por LOTBA S.E. mediante DI-2021-238-GCABA-LOTBA y DI-2023-359-GCABA-LOTBA. El ámbito de aplicación se circunscribe a la Ciudad Autónoma de Buenos Aires.
         </div>
       </footer>
