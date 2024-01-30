@@ -4,30 +4,17 @@ import {
   Nav,
   Navbar,
   Dropdown,
-  Modal,
-  Form,
   Accordion,
   InputGroup,
 } from "react-bootstrap";
 import { dateInBetween, isMobileContext } from "../App";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // import Axios from "axios";
 import { elastic as Menu } from "react-burger-menu";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleDown,
-  faAngleRight,
-  faGlobe,
-  faCirclePlay,
-  faBullhorn,
-  faCrosshairs,
-  faCoins,
-  faFlag,
-  faStar,
-  faHeart,
-} from "@fortawesome/free-solid-svg-icons";
+
 import { Link, NavLink } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Arrowrightw, Arrowdown, Deportes, LocalesMenuIcon, Promociones, Ruletasenvivo, CasinoMenuIcon, Directo, ArrowdownBlack } from '../icons';
 
 function Header(props) {
   const acceder =
@@ -54,38 +41,38 @@ function Header(props) {
 
   const menu = [
     {
-      icon: faCrosshairs,
+      icon: Deportes,
       name: "Deportes",
       url: "https://m.caba.codere.bet.ar/deportes/#/HomePage",
       target: "_self",
     },
     {
-      icon: faCirclePlay,
+      icon: Directo,
       name: "Directo",
       url: "https://m.caba.codere.bet.ar/deportes/#/DirectosPage",
       target: "_self",
     },
     {
-      icon: faCoins,
+      icon: CasinoMenuIcon,
       name: "Casino",
       url: "https://m.caba.codere.bet.ar/deportes/#/CasinoPage",
       target: "_self",
     },
     {
-      icon: faHeart,
+      icon: Ruletasenvivo,
       name: "En Vivo",
       url: "https://m.caba.codere.bet.ar/deportes/#/CasinoenVivoPage",
       target: "_self",
     },
 
     {
-      icon: faBullhorn,
+      icon: Promociones,
       name: "Promociones",
       url: "https://m.caba.codere.bet.ar/deportes/#/PromotionsPage",
       target: "_self",
     },
     {
-      icon: faGlobe,
+      icon: LocalesMenuIcon,
       name: "Nuestras Salas",
       url: "https://bingos.codere.bet.ar",
       target: "_blank",
@@ -93,34 +80,29 @@ function Header(props) {
   ];
 
   const seo_menu = [
-    { name: "Casino", url: "/casino", icon: faCoins, isSPA: true },
+    { name: "Casino", url: "/casino",  isSPA: true },
     {
       name: "Casino en vivo",
       url: "/casino/casino-en-vivo",
-      icon: faCoins,
       isSPA: true,
     },
     {
       name: "Ruleta",
       url: "/casino/ruleta",
-      icon: faStar,
       isSPA: true,
     },
     {
       name: "Slots",
       url: "/casino/slots",
-      icon: faFlag,
       isSPA: true,
     },
     {
       name: "Blackjack",
       url: "/casino/blackjack",
-      icon: faHeart,
     },
     {
       name: "Eventos Deportivos",
       url: "/eventos-deportivos",
-      icon: faHeart,
     },
   ];
 
@@ -220,22 +202,27 @@ function Header(props) {
                         target={m.target}
                         rel="nofollow"
                       >
-                        <FontAwesomeIcon icon={m.icon} />
-                        {m.name}
-                        <FontAwesomeIcon icon={faAngleRight} />
+                        <div className={'mobMenuSVGwrapper'}>
+                          {(React.createElement (m.icon, { className: "mobileMenuIcon" }))}
+                          {m.name}
+                        </div>
+
+                        <div className={'arrowright'}>
+                          < Arrowrightw/>
+                        </div>
                       </NavLink>
                     ))}
 
                     <Accordion className="hamb-accordion">
                       <Accordion.Item eventKey="0">
-                        <Accordion.Header>¿Cómo jugar?</Accordion.Header>
+                        <Accordion.Header className={'codereAcordeonTX'}>¿Cómo jugar?</Accordion.Header>
                         <Accordion.Body>
                           <ul>
                             {seo_menu.map((s, k) => (
                               <li key={k}>
                                 <Link to={s.url} onClick={hamburgerHandler}>
                                   {s.name}
-                                  <FontAwesomeIcon icon={faAngleRight} />
+                                  < Arrowrightw/>
                                 </Link>
                               </li>
                             ))}
@@ -303,7 +290,7 @@ function Header(props) {
                 <div className="header-group-right">
                   <Dropdown>
                     <Dropdown.Toggle className="header_btn">
-                      <FontAwesomeIcon icon={faAngleDown} />
+                      <ArrowdownBlack className={"arrowdownBlack"}/>
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
                       {seo_menu.map((s, k) => (

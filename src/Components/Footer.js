@@ -1,92 +1,90 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faInstagram,
-  faXTwitter,
-  faYoutube,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
+
+import { CodereChat, Facebook, Instagram, Twitter, Youtube, Phone, Whatsapp, Whatsapp96, Whatsapp250, WhatsappGreen } from '../icons';
 
 // Codere Footer \\
-function Footer() {
-  return (
-    <div>
-      {/* <hr /> */}
-      <footer className="nb-footer">
-        <div className="sponsor">
-          <img
-            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/Sponsorship-RM.svg"
-            alt="Codere-RealMadrid"
-          />
+function Footer () {
+	return (<div>
+		{/* <hr /> */}
+		<footer className="nb-footer">
+			<div className="sponsor">
+				<img
+					src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/Sponsorship-RM.svg"
+					alt="Codere-RealMadrid"
+				/>
 
-          <img
-            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/Sponsorship-Rayados.svg"
-            alt="Codere-Rayados"
-          />
+				<img
+					src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/Sponsorship-Rayados.svg"
+					alt="Codere-Rayados"
+				/>
 
-          <img
-            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/footerlogocodereriver.svg"
-            alt="Codere-RiverPlate"
-          />
-        </div>
-        <div className="methods">
-          <img
-            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/img/logotransfbancaria.png"
-            alt="Transferencia Bancaria"
-          />
-          <img
-            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/FooterMasterCard.png"
-            alt="Master-Card"
-          />
-          <img
-            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/Debin.png"
-            alt="Debin"
-          />
-          <img
-            src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/mercado-pago.svg"
-            alt="Mercado Pago"
-          />
-        </div>
-        <div className="about">
-          <div className="social-media">
-            <p style={{ color: "#79c000" }}>
-              ¡SEGUINOS EN NUESTRAS REDES SOCIALES!
-            </p>
-            <ul className="list-inline">
-              <li>
-                <a
-                  href="https://www.facebook.com/CodereArgentina/"
-                  title=""
-                  rel="nofollow"
-                >
-                  <FontAwesomeIcon icon={faFacebookF} />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/codereargentina/"
-                  title=""
-                  rel="nofollow"
-                >
-                  <FontAwesomeIcon icon={faInstagram} />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/CodereArgentina"
-                  title=""
-                  rel="nofollow"
-                >
-                  <FontAwesomeIcon icon={faXTwitter} />
-                </a>
-              </li>
-              <li>
-                <a
+				<img
+					src="https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/footerlogocodereriver.svg"
+					alt="Codere-RiverPlate"
+				/>
+			</div>
+			<div className="methods">
+
+
+				<div className={'footerLogo'}><img
+					src="https://www.codere.bet.ar/argentina/images/homepage/desktop/marcado_pago.webp"
+					alt="Transferencia Bancaria"
+				/></div>
+				<div className={'footerLogo'}><img
+					src="https://www.codere.bet.ar/argentina/images/homepage/desktop/mastercard.webp"
+					alt="Master-Card"
+				/></div>
+				<div className={'footerLogo'}><img
+					src="https://www.codere.bet.ar/argentina/images/homepage/desktop/Debin.webp"
+					alt="Debin"
+				/></div>
+				<div className={'footerLogo noBorder'}><img
+					className={'methodsLastLogo'}
+					src="https://www.codere.bet.ar/argentina/images/homepage/desktop/transferencia_bancaria.webp"
+					alt="Mercado Pago"
+				/></div>
+
+
+			</div>
+			<div className="about">
+				<div className="social-media">
+					<p style={{ color: "#79c000" }}>
+						¡SEGUINOS EN NUESTRAS REDES SOCIALES!
+					</p>
+					<ul className="list-inline">
+						<li>
+							<a
+								href="https://www.facebook.com/CodereArgentina/"
+								title=""
+								rel="nofollow"
+							>
+                  <Facebook />
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://www.instagram.com/codereargentina/"
+								title=""
+								rel="nofollow"
+							>
+                  <Instagram />
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://twitter.com/CodereArgentina"
+								title=""
+								rel="nofollow"
+							>
+                  <Twitter />
+							</a>
+						</li>
+						<li>
+							<a
                   href="https://api.whatsapp.com/send?phone=5491140457247"
-                  title=""
-                  rel="nofollow"
-                >
-                  <FontAwesomeIcon icon={faWhatsapp} />
+								title=""
+								rel="nofollow"
+							>
+                  <WhatsappGreen className={'whatsapplogo'}  />
                 </a>
               </li>
             </ul>
@@ -278,7 +276,7 @@ function Footer() {
                       target="_blank"
                       className="whatsapp"
                     >
-                      <FontAwesomeIcon icon={faWhatsapp} />
+                      <WhatsappGreen className={"ayudaIconsFooter"}   />
                       {"  "} +549 1140 457247
                     </a>
                   </li>
