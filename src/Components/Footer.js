@@ -30,10 +30,6 @@ function Footer () {
 					alt="Transferencia Bancaria"
 				/></div>
 				<div className={'footerLogo'}><img
-					src="https://www.codere.bet.ar/argentina/images/homepage/desktop/mastercard.webp"
-					alt="Master-Card"
-				/></div>
-				<div className={'footerLogo'}><img
 					src="https://www.codere.bet.ar/argentina/images/homepage/desktop/Debin.webp"
 					alt="Debin"
 				/></div>
