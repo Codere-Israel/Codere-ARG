@@ -14,7 +14,7 @@ import { elastic as Menu } from "react-burger-menu";
 
 import { Link, NavLink } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Arrowrightw, Arrowdown, Deportes, LocalesMenuIcon, Promociones, Ruletasenvivo, CasinoMenuIcon, Directo, ArrowdownBlack } from '../icons';
+import { Arrowrightw, Deportes,  Promociones, Ruletasenvivo, CasinoMenuIcon, Directo, ArrowdownBlack, Omnichannel } from '../icons';
 
 function Header(props) {
   const acceder =
@@ -72,7 +72,7 @@ function Header(props) {
       target: "_self",
     },
     {
-      icon: LocalesMenuIcon,
+      icon: Omnichannel,
       name: "Nuestras Salas",
       url: "https://bingos.codere.bet.ar",
       target: "_blank",
