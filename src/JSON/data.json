@@ -33,12 +33,6 @@
       "scheduled": false
     },
     {
-      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/payment-banner-desktop.jpg",
-      "img_alt": "Methodos",
-      "ctaURL": "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
-      "scheduled": false
-    },
-    {
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/diver_desktop.jpg",
       "img_alt": "Bingo",
       "ctaText": "visitanos",
@@ -77,13 +71,6 @@
       "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/bannerMobile2.jpg",
       "img_alt": "Online Codere",
       "ctaURL": "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
-      "scheduled": false
-    },
-    {
-      "image": "https://www.codere.bet.ar/_catalogs/masterpage/codere/images/splash/payment-banner-mobile.jpg",
-      "img_alt": "Métodos de Pago",
-      "ctaURL": "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
-
       "scheduled": false
     },
     {
