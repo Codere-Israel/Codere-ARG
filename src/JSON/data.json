@@ -1,13 +1,13 @@
 {
   "desktop_slide_list": [
     {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/rayados-river-desktop.webp",
-      "img_alt": "river-plate",
+      "image": "https://www.codere.bet.ar/assets/splash-banners/river-boca-desktop.jpg",
+      "img_alt": "river-boca",
       "ctaURL": "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
       "tycType": "sport",
       "name": "Bono de Bienvenida",
-      "startDate":"2024-01-15T07:00:00Z",
-      "endDate":"2024-01-17T23:59:00Z",
+      "startDate":"2024-02-21T07:00:00Z",
+      "endDate":"2024-02-25T20:00:00Z",
       "scheduled": true
     },
     {
@@ -48,13 +48,13 @@
   ],
   "mobile_slide_list": [
     {
-      "image": "https://www.codere.bet.ar/assets/splash-banners/rayados-river-mobile.webp",
-      "img_alt": "river-plate",
+      "image": "https://www.codere.bet.ar/assets/splash-banners/river-boca-mobile.jpg",
+      "img_alt": "river-boca",
       "name": "Bono de Bienvenida",
       "ctaURL": "https://m.caba.codere.bet.ar/deportes/#/RegistroARPage",
       "tycType": "sport",
-      "startDate":"2024-01-15T07:00:00Z",
-      "endDate":"2024-01-17T23:59:00Z",
+      "startDate":"2024-02-21T07:00:00Z",
+      "endDate":"2024-02-25T20:00:00Z",
       "scheduled": true
     },
     {
